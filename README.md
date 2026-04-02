@@ -1,79 +1,159 @@
-# 🌍 Traveloop – Smart Travel Planning Web App
+# Traveloop – Smart Travel Planning and Buddy Matching Platform
 
-Traveloop is a full-stack travel planning web application that helps users plan trips, find travel partners, generate itineraries, and manage bookings.
-
----
-
-## 🚀 Features
-
-### 🧭 Trip Planner
-- Generate day-by-day itinerary
-- Shows hotels, restaurants, attractions
-- Budget breakdown
-- City-wise recommendations
-- Supports Chennai, Shimla, Varanasi
-
-### 🤝 Travel Buddy
-- Find travel partners
-- Match users by destination
-- View suggested travellers
-- Expense splitter tool
-
-### 🏨 Booking System
-- User registration & login
-- Booking confirmation stored in MySQL
-- Billing page integration
-
-### 🌐 Smart Data Integration
-- Attractions, hotels, restaurants from JSON
-- Events & festivals by city
-- Multi-page navigation
+Traveloop is a full stack travel planning web application that allows users to explore destinations, generate itineraries, find travel partners, and manage trip expenses. The platform integrates frontend user interfaces with a Node.js backend and MySQL database to provide a complete travel management solution.
 
 ---
 
-## 🛠 Tech Stack
+## Overview
 
-### Frontend
+Traveloop simplifies trip planning by combining itinerary generation, travel partner matching, expense splitting, and booking management in a single platform. Users can select destinations, receive structured travel plans, connect with compatible travelers, and track trip budgets efficiently.
+
+---
+
+## Features
+
+### Trip Planner
+- Generates day-wise travel itinerary
+- Displays recommended attractions, hotels, and restaurants
+- Calculates approximate budget distribution
+- Uses structured city data from JSON files
+- Supports multiple destinations
+
+### Travel Buddy Matching
+- Allows users to find compatible travel partners
+- Suggests travelers based on selected destination
+- Displays partner preferences such as budget and interests
+- Includes an expense splitting tool for shared costs
+
+### Booking System
+- User registration and login functionality
+- Booking details stored in MySQL database
+- Billing interface for confirming reservations
+
+### City Data Integration
+- City-wise attractions, hotels, and restaurants
+- Event and festival information
+- Structured JSON-based data handling
+
+### User Interface
+- Responsive design
+- Multi-page navigation system
+- Organized layout for planner and buddy features
+
+---
+
+## Technology Stack
+
+Frontend:
 - HTML
 - CSS
 - JavaScript
 
-### Backend
+Backend:
 - Node.js
 - Express.js
 
-### Database
+Database:
 - MySQL
 
-### Tools
+Development Tools:
+- Git
 - GitHub
 - VS Code
 
 ---
 
-## 📸 Screenshots
+## Supported Cities
 
-### Home Page
-![Home](photoz/home.png)
-
-### Trip Planner
-![Planner](photoz/planner.png)
-
-### Generated Itinerary
-![Itinerary](photoz/itinerary.png)
-
-### Travel Buddy Page
-![Travel Buddy](photoz/travelbuddy.png)
-
-### Suggested Partners
-![Partners](photoz/partners.png)
-
-### Login Page
-![Login](photoz/login.png)
-
-### Booking Page
-![Booking](photoz/booking.png)
+- Chennai
+- Shimla
+- Varanasi
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
+
+
+traveloop
+│
+├── backend
+│ ├── routes
+│ ├── config
+│ ├── server.js
+│ └── package.json
+│
+├── index.html
+├── explore.html
+├── planner.html
+├── travel-buddy.html
+├── suggested-partners.html
+├── billing.html
+├── login.html
+├── register.html
+│
+├── style.css
+├── script.js
+│
+├── data.json
+├── travellerdata.json
+│
+├── screenshots
+│
+└── README.md
+
+
+---
+
+## Installation and Setup
+
+### 1. Clone repository
+
+
+git clone https://github.com/saum1k/traveloop.git
+
+
+### 2. Open project folder
+
+
+cd traveloop
+
+
+### 3. Run frontend
+
+Open index.html in browser.
+
+### 4. Setup backend
+
+
+cd backend
+npm install
+npm start
+
+
+### 5. Setup database
+
+Create database in MySQL:
+
+
+CREATE DATABASE traveloop;
+
+
+---
+
+## Future Improvements
+
+- Video call verification for travel partners
+- AI-based itinerary optimization
+- Online payment gateway integration
+- Chat functionality between travelers
+- Map-based recommendations
+- Multi-language page translation
+
+---
+
+## Author
+
+Saumik
+
+GitHub Profile:
+https://github.com/saum1k
