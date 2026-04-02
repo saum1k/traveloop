@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%); min-height:100vh; display:flex; flex-direction:column;">
+
+<!-- NAVBAR -->
+<nav class="navbar" style="position:relative;">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- REGISTER SECTION -->
+<div style="flex:1; display:flex; align-items:center; justify-content:center; padding:3rem 1.5rem;">
+  <div style="width:100%; max-width:500px;">
+
+    <!-- Logo -->
+    <div style="text-align:center; margin-bottom:2rem;">
+      <div class="nav-logo" style="font-size:2.5rem; display:block; margin-bottom:0.3rem;">Travel<span style="color:white">oop</span></div>
+      <p style="color:rgba(255,255,255,0.6); font-size:0.95rem;">Join thousands of happy travelers</p>
+    </div>
+
+    <div class="form-card">
+      <div class="form-title">Create Account</div>
+      <div class="form-sub">Start your journey with Traveloop today</div>
+
+      <form id="register-form" onsubmit="handleRegister(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" id="reg-fname" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" id="reg-lname" placeholder="Last name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" id="reg-email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="reg-phone" placeholder="+91 98765 43210" autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label>Password *</label>
+          <div style="position:relative;">
+            <input type="password" id="reg-pass" placeholder="Min. 6 characters" required autocomplete="new-password" oninput="checkPasswordStrength(this.value)" style="padding-right:3rem;">
+            <span onclick="togglePwd('reg-pass', this)" style="position:absolute; right:1rem; top:50%; transform:translateY(-50%); cursor:pointer; font-size:1.1rem; color:var(--text-light);">👁️</span>
+          </div>
+          <!-- Password Strength -->
+          <div id="pwd-strength" style="margin-top:0.5rem; font-size:0.82rem; color:var(--text-light);"></div>
+          <div id="pwd-bar" style="height:4px; border-radius:2px; background:var(--border); margin-top:0.3rem;"><div id="pwd-fill" style="height:100%; border-radius:2px; width:0%; transition:all 0.3s;"></div></div>
+        </div>
+        <div class="form-group">
+          <label>Confirm Password *</label>
+          <div style="position:relative;">
+            <input type="password" id="reg-confirm" placeholder="Repeat password" required autocomplete="new-password" style="padding-right:3rem;">
+            <span onclick="togglePwd('reg-confirm', this)" style="position:absolute; right:1rem; top:50%; transform:translateY(-50%); cursor:pointer; font-size:1.1rem; color:var(--text-light);">👁️</span>
+          </div>
+        </div>
+
+        <!-- Hidden field for handleRegister -->
+        <input type="hidden" id="reg-name" value="">
+
+        <div class="form-group">
+          <label>I am interested in</label>
+          <select>
+            <option>Beach & Relaxation</option>
+            <option>Adventure & Trekking</option>
+            <option>Culture & Heritage</option>
+            <option>Food & Culinary</option>
+            <option>Business Travel</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom:1.2rem; font-size:0.88rem; color:var(--text);">
+          <label style="display:flex; align-items:flex-start; gap:0.5rem; cursor:pointer; font-weight:400;">
+            <input type="checkbox" id="terms-check" style="margin-top:2px; flex-shrink:0;">
+            <span>I agree to the <a href="#" style="color:var(--primary);">Terms of Service</a> and <a href="#" style="color:var(--primary);">Privacy Policy</a>. I consent to receive travel deals and updates.</span>
+          </label>
+        </div>
+
+        <div id="reg-msg"></div>
+        <button type="submit" class="btn btn-primary btn-full btn-lg" style="border-radius:var(--radius-sm);">Create My Account →</button>
+      </form>
+
+      <div class="form-link">
+        Already have an account? <a href="login.html">Sign in →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+async function handleRegister(event){
+
+event.preventDefault();
+
+const name = document.getElementById("reg-fname").value + " " +
+             document.getElementById("reg-lname").value;
+
+const email = document.getElementById("reg-email").value;
+
+const password = document.getElementById("reg-pass").value;
+
+const phone = document.getElementById("reg-phone").value;
+
+const confirmPassword = document.getElementById("reg-confirm").value;
+
+
+// password match check
+if(password !== confirmPassword){
+
+alert("Passwords do not match");
+
+return;
+
+}
+
+
+try{
+
+const response = await fetch("http://localhost:5000/api/register",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+name:name,
+email:email,
+password:password,
+phone:phone
+
+})
+
+});
+
+
+const result = await response.json();
+
+
+document.getElementById("reg-msg").innerHTML = result.message;
+
+
+if(result.success){
+
+alert("Account created successfully");
+
+window.location.href="login.html";
+
+}
+
+}
+catch(error){
+
+console.log(error);
+
+alert("Server error");
+
+}
+
+}
+</script>
+</body>
+</html>

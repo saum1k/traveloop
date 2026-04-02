@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <!--<li><a href="hotels.html" class="active">Hotels</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="rentals.html">Rentals</a></li>-->
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="travel-buddy.html">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Hotels</div>
+    <h1 id="hotels-heading">Hotels</h1>
+    <p id="hotels-sub">Showing best hotels for your stay</p>
+  </div>
+</div>
+
+<!-- AREA TABS -->
+<section class="section-sm" style="background:var(--white); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="tabs" id="area-tabs">
+      <button class="tab-btn active" onclick="filterByArea('all', this)">All Areas</button>
+      <button class="tab-btn" onclick="filterByArea('marina', this)">🏖️ Marina</button>
+      <button class="tab-btn" onclick="filterByArea('nagar', this)">📍 Nagar</button>
+      <button class="tab-btn" onclick="filterByArea('ghat', this)">🪔 Ghat</button>
+    </div>
+  </div>
+</section>
+
+<!-- SORT + GRID -->
+<section class="section">
+  <div class="container">
+
+    <!-- Amenity Filters -->
+    <div id="amenity-filters"></div>
+
+    <div class="flex-between mb-3" style="flex-wrap:wrap; gap:1rem;">
+      <span id="hotel-count" style="color:var(--text-light); font-size:0.9rem;"></span>
+      <div style="display:flex; gap:0.7rem; align-items:center; flex-wrap:wrap;">
+        <label style="font-size:0.9rem; font-weight:600; color:var(--dark);">Sort by:</label>
+        <select id="sort-hotels" onchange="sortHotels()" style="padding:0.5rem 1rem; border:2px solid var(--border); border-radius:8px; font-size:0.9rem; background:var(--white);">
+          <option value="rating">⭐ Rating</option>
+          <option value="price-asc">💰 Price: Low to High</option>
+          <option value="price-desc">💰 Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="cards-grid" id="hotels-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">All Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="rentals.html">Rentals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Plan</h4>
+      <a href="planner.html">Trip Planner</a>
+      <a href="travel-buddy.html">Travel Buddy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script></script>
+</body>
+</html>

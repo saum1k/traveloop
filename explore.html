@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Destinations – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html" class="active">Explore</a></li>
+    <!--<li><a href="hotels.html">Hotels</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="rentals.html">Rentals</a></li>-->
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="travel-buddy.html">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Explore</div>
+    <h1>Explore Destinations</h1>
+    <p>Find your perfect getaway from our curated list of incredible places</p>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<section class="section-sm">
+  <div class="container">
+    <div class="filter-bar">
+      <span class="filter-label">Filter by:</span>
+      <select id="filter-category" onchange="filterDestinations()">
+        <option value="all">All Categories</option>
+        <option value="beach">🏖️ Beach</option>
+        <option value="mountain">⛰️ Mountain</option>
+        <option value="heritage">🏯 Heritage</option>
+        <option value="nature">🌴 Nature</option>
+        <option value="city">🌆 City</option>
+      </select>
+      <select id="filter-budget" onchange="filterDestinations()">
+        <option value="all">All Budgets</option>
+        <option value="budget">Budget (Under ₹2000)</option>
+        <option value="mid">Mid Range (₹2000–₹5000)</option>
+        <option value="luxury">Luxury (₹5000+)</option>
+      </select>
+      <input type="text" id="filter-search" placeholder="🔍 Search destinations..." oninput="filterDestinations()" style="flex:1; min-width:180px;">
+    </div>
+
+    <!-- Destinations Grid -->
+    <div class="cards-grid" id="destinations-grid">
+
+      <div class="card" data-category="beach" data-price="3500" data-name="Chennai">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&q=80" alt="Chennai" loading="lazy">
+          <div class="card-badge">🔥 Trending</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Chennai, Tamil Nadu</div>
+          <div class="card-desc">The gateway of South India — Marina Beach, Kapaleeshwarar Temple, and South Indian cuisine.</div>
+          <div class="card-meta">
+            <div class="rating">★★★★★ <span>4.8</span></div>
+            <div class="price">₹3,500 <small>/night</small></div>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="window.location.href='destination.html?place=chennai'">View Details →</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="mountain" data-price="4200" data-name="Shimla">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600&q=80" alt="Shimla" loading="lazy">
+          <div class="card-badge">⛰️ Mountain</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Shimla, Himachal Pradesh</div>
+          <div class="card-desc">Cool weather, mountain views, and classic hill-station charm.</div>
+          <div class="card-meta">
+            <div class="rating">★★★★½ <span>4.7</span></div>
+            <div class="price">₹4,200 <small>/night</small></div>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="window.location.href='destination.html?city=shimla'">View Details →</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="heritage" data-price="2800" data-name="Varanasi">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="Varanasi" loading="lazy">
+          <div class="card-badge">🏯 Heritage</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Varanasi, Uttar Pradesh</div>
+          <div class="card-desc">Spiritual ghats, temple heritage, and timeless culture on the Ganga.</div>
+          <div class="card-meta">
+            <div class="rating">★★★★★ <span>4.9</span></div>
+            <div class="price">₹2,800 <small>/night</small></div>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="window.location.href='destination.html?city=varanasi'">View Details →</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="nature" data-price="3200" data-name="Kerala">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80" alt="Kerala" loading="lazy">
+          <div class="card-badge">🌴 Nature</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Kerala</div>
+          <div class="card-desc">God's Own Country — serene backwaters, lush hill stations, and Ayurvedic wellness.</div>
+          <div class="card-meta">
+            <div class="rating">★★★★★ <span>4.9</span></div>
+            <div class="price">₹3,200 <small>/night</small></div>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="comingSoon('Kerala')">View Details →</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="city" data-price="5000" data-name="Mumbai">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=600&q=80" alt="Mumbai" loading="lazy">
+          <div class="card-badge">🌆 City</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Mumbai, Maharashtra</div>
+          <div class="card-desc">The City of Dreams — Gateway of India, Bollywood, Marine Drive, and street food galore.</div>
+          <div class="card-meta">
+            <div class="rating">★★★★½ <span>4.6</span></div>
+            <div class="price">₹5,000 <small>/night</small></div>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="comingSoon('Mumbai')">View Details →</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="mountain" data-price="2500" data-name="Manali">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80" alt="Manali" loading="lazy">
+          <div class="card-badge">⛰️ Mountains</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Manali, Himachal Pradesh</div>
+          <div class="card-desc">Adventure capital of India — skiing, trekking, and breathtaking Himalayan landscapes.</div>
+          <div class="card-meta">
+            <div class="rating">★★★★★ <span>4.8</span></div>
+            <div class="price">₹2,500 <small>/night</small></div>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="comingSoon('Manali')">View Details →</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="heritage" data-price="3800" data-name="Agra">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80" alt="Agra" loading="lazy">
+          <div class="card-badge">🏛️ World Wonder</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Agra, Uttar Pradesh</div>
+          <div class="card-desc">Home of the iconic Taj Mahal — a timeless symbol of love and Mughal architecture.</div>
+          <div class="card-meta">
+            <div class="rating">★★★★★ <span>4.9</span></div>
+            <div class="price">₹3,800 <small>/night</small></div>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="comingSoon('Agra')">View Details →</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="mountain" data-price="1800" data-name="Ooty">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1582972236019-ea4af5ffe587?w=600&q=80" alt="Ooty" loading="lazy">
+          <div class="card-badge">🌿 Hill Station</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Ooty, Tamil Nadu</div>
+          <div class="card-desc">The Queen of Hill Stations — tea gardens, Nilgiri Mountain Railway, and cool mountain air.</div>
+          <div class="card-meta">
+            <div class="rating">★★★★½ <span>4.5</span></div>
+            <div class="price">₹1,800 <small>/night</small></div>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="comingSoon('Ooty')">View Details →</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- No results message -->
+    <div id="no-results" class="hidden text-center" style="padding:3rem; color:var(--text-light);">
+      <div style="font-size:3rem; margin-bottom:1rem;">🔍</div>
+      <h3>No destinations found</h3>
+      <p>Try adjusting your filters or search term.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion. Discover destinations, book hotels, rent vehicles, and plan unforgettable trips.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">All Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="rentals.html">Vehicle Rentals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+    <div class="social-links">
+      <a class="social-link" href="#">📘</a>
+      <a class="social-link" href="#">📸</a>
+      <a class="social-link" href="#">🐦</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .toast {
+    position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
+    background: var(--dark); color: #fff; padding: 1rem 2rem;
+    border-radius: 50px; font-size: 0.95rem; font-weight: 500;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25); z-index: 9999;
+    opacity: 0; transition: opacity 0.3s; pointer-events: none;
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  .toast.show { opacity: 1; }
+</style>
+<div class="toast" id="coming-toast">🚧 <span id="toast-city">This destination</span> is coming soon!</div>
+
+<script src="script.js"></script>
+<script>
+  function comingSoon(city) {
+    const toast = document.getElementById('coming-toast');
+    document.getElementById('toast-city').textContent = city;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
+  }
+
+  function filterDestinations() {
+    const cat = document.getElementById('filter-category').value;
+    const budget = document.getElementById('filter-budget').value;
+    const search = document.getElementById('filter-search').value.toLowerCase();
+    const cards = document.querySelectorAll('#destinations-grid .card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const cardCat = card.getAttribute('data-category');
+      const cardPrice = parseInt(card.getAttribute('data-price'));
+      const cardName = card.getAttribute('data-name').toLowerCase();
+      const cardText = card.innerText.toLowerCase();
+
+      let show = true;
+      if (cat !== 'all' && cardCat !== cat) show = false;
+      if (budget === 'budget' && cardPrice >= 2000) show = false;
+      if (budget === 'mid' && (cardPrice < 2000 || cardPrice > 5000)) show = false;
+      if (budget === 'luxury' && cardPrice <= 5000) show = false;
+      if (search && !cardText.includes(search)) show = false;
+
+      card.style.display = show ? 'block' : 'none';
+      if (show) visible++;
+    });
+
+    document.getElementById('no-results').classList.toggle('hidden', visible > 0);
+  }
+</script>
+</body>
+</html>

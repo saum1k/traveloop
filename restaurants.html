@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurants – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <!--<li><a href="hotels.html">Hotels</a></li>
+    <li><a href="restaurants.html" class="active">Restaurants</a></li>
+    <li><a href="rentals.html">Rentals</a></li>-->
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="travel-buddy.html">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Restaurants</div>
+    <h1 id="restaurants-heading">Restaurants</h1>
+    <p id="restaurants-sub">Find and book top places to eat</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="cards-grid" id="restaurants-grid"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">All Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="rentals.html">Rentals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Plan</h4>
+      <a href="planner.html">Trip Planner</a>
+      <a href="travel-buddy.html">Travel Buddy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

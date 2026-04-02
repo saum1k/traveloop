@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Buddy – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <!--<li><a href="hotels.html">Hotels</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="rentals.html">Rentals</a></li>-->
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="travel-buddy.html" class="active">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MAIN BANNER -->
+<div class="buddy-card" style="border-radius:0; margin-bottom:0; padding:4rem 3rem;">
+  <div class="buddy-icon">👥</div>
+  <div>
+    <h2>Find Your Travel Buddy</h2>
+    <p>Connect with fellow travelers, split costs, and make unforgettable memories together. You can share hotel, food, and travel costs with your buddy!</p>
+    <div style="margin-top:1.2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+      <a href="#find-buddy" class="btn btn-primary">🔍 Find a Buddy</a>
+      <a href="#post-trip" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:white;">📝 Post Your Trip</a>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">✨ How It Works</div>
+      <h2 class="section-title">Travel Together, Save More</h2>
+      <p class="section-sub">Share expenses and make new friends while exploring</p>
+    </div>
+
+    <div class="buddy-features">
+      <div class="buddy-feature">
+        <div class="buddy-feature-icon">🏨</div>
+        <h4>Share Hotel Costs</h4>
+        <p>Split room rates with your travel buddy and save up to 50%</p>
+      </div>
+      <div class="buddy-feature">
+        <div class="buddy-feature-icon">🍛</div>
+        <h4>Split Food Bills</h4>
+        <p>Explore local cuisine without worrying about the bill</p>
+      </div>
+      <div class="buddy-feature">
+        <div class="buddy-feature-icon">🚗</div>
+        <h4>Share Travel Costs</h4>
+        <p>Split cab, fuel, and vehicle rental expenses effortlessly</p>
+      </div>
+      <div class="buddy-feature">
+        <div class="buddy-feature-icon">🎫</div>
+        <h4>Group Discounts</h4>
+        <p>Get better group prices on tours, activities, and attractions</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPENSE CALCULATOR -->
+<section class="section" id="find-buddy">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;" class="buddy-layout">
+
+      <!-- POST TRIP FORM -->
+      <div id="post-trip">
+        <div class="form-card" style="max-width:100%;">
+          <div class="form-title">📝 Find a travel partner</div>
+          <div class="form-sub">Let others know about your travel plans and find companions</div>
+
+          <form onsubmit="goToPartners(event)">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" id="buddy-name" placeholder="e.g. Ravi Kumar" required>
+            </div>
+            <div class="form-group">
+              <label>Destination *</label>
+              <select id="buddy-dest" required>
+
+<option value="">Select Destination</option>
+
+<option value="chennai">Chennai</option>
+
+<option value="shimla">Shimla</option>
+
+<option value="varanasi">Varanasi</option>
+
+</select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Travel Date</label>
+                <input type="date" id="buddy-date">
+              </div>
+              <div class="form-group">
+                <label>Duration</label>
+                <select>
+                  <option>Weekend (2-3 days)</option>
+                  <option>Short Trip (4-6 days)</option>
+                  <option>Week (7 days)</option>
+                  <option>Extended (10+ days)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Budget per Person (₹) *</label>
+              <input type="number" id="buddy-budget" placeholder="e.g. 15000" required>
+            </div>
+            <div class="form-group">
+              <label>Travel Style</label>
+              <select>
+                <option>Budget Backpacker</option>
+                <option>Mid-range Comfort</option>
+                <option>Luxury Traveler</option>
+                <option>Adventure Seeker</option>
+                <option>Cultural Explorer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Split Expenses For</label>
+              <div style="display:flex; flex-wrap:wrap; gap:0.7rem; margin-top:0.5rem;">
+                <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox" checked> 🏨 Hotel</label>
+                <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox" checked> 🍛 Food</label>
+                <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox" checked> 🚗 Transport</label>
+                <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox"> 🎫 Activities</label>
+              </div>
+            </div>
+            <div id="buddy-msg"></div>
+            <button type="submit" class="btn btn-primary btn-full mt-2" style="border-radius:var(--radius-sm); padding:0.9rem;">👥 Find My Travel Buddy</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- EXPENSE CALCULATOR -->
+      <div>
+        <div class="form-card" style="max-width:100%; background:linear-gradient(135deg, var(--dark), var(--dark2)); color:var(--white);">
+          <div class="form-title" style="color:var(--white);">🧮 Expense Splitter</div>
+          <div class="form-sub" style="color:rgba(255,255,255,0.6);">Calculate how much each person pays</div>
+
+          <div class="form-group">
+            <label style="color:rgba(255,255,255,0.8);">Number of Buddies</label>
+            <input type="number" id="split-people" value="2" min="1" max="10" oninput="calculateSplit()" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:white;">
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <div class="section-label" style="color:var(--primary); margin-bottom:0.8rem;">Enter Costs</div>
+            <div class="form-group">
+              <label style="color:rgba(255,255,255,0.8);">Hotel (₹ total)</label>
+              <input type="number" id="cost-hotel" placeholder="0" oninput="calculateSplit()" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:white;">
+            </div>
+            <div class="form-group">
+              <label style="color:rgba(255,255,255,0.8);">Food (₹ total)</label>
+              <input type="number" id="cost-food" placeholder="0" oninput="calculateSplit()" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:white;">
+            </div>
+            <div class="form-group">
+              <label style="color:rgba(255,255,255,0.8);">Transport (₹ total)</label>
+              <input type="number" id="cost-transport" placeholder="0" oninput="calculateSplit()" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:white;">
+            </div>
+            <div class="form-group">
+              <label style="color:rgba(255,255,255,0.8);">Activities (₹ total)</label>
+              <input type="number" id="cost-activities" placeholder="0" oninput="calculateSplit()" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:white;">
+            </div>
+          </div>
+
+          <div style="background:rgba(255,152,0,0.15); border:1px solid rgba(255,152,0,0.3); border-radius:var(--radius-sm); padding:1.2rem;">
+            <div style="display:flex; justify-content:space-between; margin-bottom:0.6rem; font-size:0.9rem; color:rgba(255,255,255,0.7);"><span>Total Expenses</span><strong id="split-total" style="color:white;">₹0</strong></div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:0.6rem; font-size:0.9rem; color:rgba(255,255,255,0.7);"><span>Number of People</span><strong id="split-people-display" style="color:white;">2</strong></div>
+            <div class="divider" style="border-color:rgba(255,255,255,0.15);"></div>
+            <div style="display:flex; justify-content:space-between; font-size:1.2rem; font-weight:700;"><span style="color:var(--primary);">Per Person</span><strong id="split-per-person" style="color:var(--primary); font-family:'Playfair Display',serif; font-size:1.5rem;">₹0</strong></div>
+          </div>
+        </div>
+
+        <!-- Active Trips -->
+        <div class="form-card" style="max-width:100%; margin-top:1.2rem;">
+          <div class="form-title" style="font-size:1.2rem;">🌟 Active Trip Posts</div>
+          <div style="margin-top:1rem; display:flex; flex-direction:column; gap:0.8rem;">
+            <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm); border-left:4px solid var(--primary);">
+              <div style="font-weight:700; color:var(--dark);">Arjun S. → 🏖️ Goa</div>
+              <div style="font-size:0.85rem; color:var(--text-light);">Dec 20–25 • Budget: ₹12,000 • 1 buddy needed</div>
+              <div style="margin-top:0.5rem; display:flex; gap:0.5rem;"><span class="chip">🏨 Hotel</span><span class="chip">🍛 Food</span><span class="chip">🚗 Transport</span></div>
+            </div>
+            <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm); border-left:4px solid var(--primary);">
+              <div style="font-weight:700; color:var(--dark);">Priya K. → ⛰️ Manali</div>
+              <div style="font-size:0.85rem; color:var(--text-light);">Jan 1–7 • Budget: ₹18,000 • 2 buddies needed</div>
+              <div style="margin-top:0.5rem; display:flex; gap:0.5rem;"><span class="chip">🏨 Hotel</span><span class="chip">🚗 Transport</span></div>
+            </div>
+            <div style="padding:1rem; background:var(--bg); border-radius:var(--radius-sm); border-left:4px solid var(--primary);">
+              <div style="font-weight:700; color:var(--dark);">Meera R. → 🌴 Kerala</div>
+              <div style="font-size:0.85rem; color:var(--text-light);">Jan 15–20 • Budget: ₹15,000 • 1 buddy needed</div>
+              <div style="margin-top:0.5rem; display:flex; gap:0.5rem;"><span class="chip">🏨 Hotel</span><span class="chip">🍛 Food</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="rentals.html">Rentals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Plan</h4>
+      <a href="planner.html">Trip Planner</a>
+      <a href="travel-buddy.html">Travel Buddy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  function calculateSplit() {
+    const people = parseInt(document.getElementById('split-people').value) || 1;
+    const hotel = parseInt(document.getElementById('cost-hotel').value) || 0;
+    const food = parseInt(document.getElementById('cost-food').value) || 0;
+    const transport = parseInt(document.getElementById('cost-transport').value) || 0;
+    const activities = parseInt(document.getElementById('cost-activities').value) || 0;
+    const total = hotel + food + transport + activities;
+    const perPerson = total / people;
+
+    document.getElementById('split-total').textContent = '₹' + total.toLocaleString('en-IN');
+    document.getElementById('split-people-display').textContent = people;
+    document.getElementById('split-per-person').textContent = '₹' + Math.ceil(perPerson).toLocaleString('en-IN');
+  }
+
+  // Responsive stacking for buddy layout
+  const layout = document.querySelector('.buddy-layout');
+  if (layout && window.innerWidth < 768) {
+    layout.style.gridTemplateColumns = '1fr';
+  }
+</script>
+<script>
+
+function goToPartners(event){
+
+event.preventDefault();
+
+const city =
+document.getElementById("buddy-dest").value;
+
+if(!city){
+
+alert("Please select destination");
+
+return;
+
+}
+
+window.location.href =
+"suggested-partners.html?city=" + city;
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suggested Travel Partners</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<a href="index.html" class="nav-logo">
+Travel<span>oop</span>
+</a>
+
+<ul class="nav-links">
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="travel-buddy.html">
+Travel Buddy
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2 class="section-title">
+
+🤝 Suggested Travel Partners
+
+</h2>
+
+<p class="section-sub">
+
+People travelling to same destination
+
+</p>
+
+</div>
+
+
+
+<div id="partners-list"
+
+class="cards-grid">
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+<script>
+
+const urlParams =
+new URLSearchParams(
+window.location.search
+);
+
+const city =
+urlParams.get("city");
+
+
+
+fetch("travellerdata.json")
+
+.then(res=>res.json())
+
+.then(data=>{
+
+const partners =
+data[city];
+
+let html = "";
+
+partners.forEach(p=>{
+
+html += `
+
+<div class="card">
+
+<div class="card-body">
+
+<h3 class="card-title">
+
+${p.name}
+
+</h3>
+
+
+
+<p>
+
+Age: ${p.age}
+
+</p>
+
+
+
+<p>
+
+Budget:
+
+${p.budget}
+
+</p>
+
+
+
+<p>
+
+Trip:
+
+${p.trip}
+
+</p>
+
+
+
+<p>
+
+Interests:
+
+${p.interests.join(", ")}
+
+</p>
+
+
+
+<button
+class="btn btn-primary"
+onclick="showContactMsg(this)">
+
+Connect
+
+</button>
+
+
+
+</div>
+
+</div>
+
+`;
+
+});
+
+
+
+document.getElementById("partners-list")
+
+.innerHTML = html;
+
+
+
+});
+
+</script>
+<script>
+
+function showContactMsg(btn){
+
+btn.innerHTML =
+"Request Sent";
+
+btn.disabled = true;
+
+const msg =
+document.createElement("div");
+
+msg.className = "success-msg";
+
+msg.innerHTML =
+"Contact details will be shared soon";
+
+btn.parentElement.appendChild(msg);
+
+}
+
+</script>
+</body>
+
+</html>

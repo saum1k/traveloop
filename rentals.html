@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Rentals – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="travel-buddy.html">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Rentals</div>
+    <h1>Vehicle Rentals</h1>
+    <p>Explore destinations at your own pace with our flexible rental options</p>
+  </div>
+</div>
+
+<!-- FILTER -->
+<section class="section-sm" style="background:var(--white); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="filter-bar">
+      <span class="filter-label">Filter:</span>
+      <select id="vehicle-filter" onchange="filterVehicles()">
+        <option value="all">All Vehicles</option>
+        <option value="bike">🚲 Bikes</option>
+        <option value="scooter">🛵 Scooters</option>
+        <option value="car">🚗 Cars</option>
+        <option value="suv">🚙 SUVs</option>
+      </select>
+      <select id="price-filter" onchange="filterVehicles()">
+        <option value="all">All Prices</option>
+        <option value="budget">Under ₹500/day</option>
+        <option value="mid">₹500–₹2000/day</option>
+        <option value="premium">₹2000+/day</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<!-- DYNAMIC CITY RENTALS (shown when coming from destination/area) -->
+<section id="city-rentals-section" class="section" style="padding-bottom:0">
+  <div class="container">
+    <div class="section-header" style="text-align:left; margin-bottom:1.5rem;">
+      <div class="section-label">📍 Area Rentals</div>
+      <h2 class="section-title" style="font-size:1.6rem;" id="rentals-city-heading"></h2>
+      <p class="section-sub" id="rentals-city-sub"></p>
+    </div>
+    <div id="dynamic-rentals-section" class="cards-grid"></div>
+  </div>
+</section>
+
+<!-- VEHICLES GRID -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-header" style="text-align:left; margin-bottom:2rem;">
+      <div class="section-label">🚗 All Vehicles</div>
+      <h2 class="section-title" style="font-size:1.6rem;">Rent a Vehicle</h2>
+    </div>
+
+    <div class="cards-grid" id="vehicles-grid">
+
+      <!-- BIKE -->
+      <div class="vehicle-card" data-type="bike" data-price="300">
+        <div class="vehicle-img-wrap">
+          <div class="vehicle-icon">🚲</div>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">City Bicycle</div>
+          <div style="color:var(--text-light); font-size:0.88rem; margin:0.3rem 0 0.7rem;">Ideal for short city rides & beach routes</div>
+          <div class="vehicle-price">₹300 / day</div>
+          <div class="vehicle-specs">
+            <span class="spec">Eco-friendly</span>
+            <span class="spec">Helmet included</span>
+            <span class="spec">City use</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookVehicle('City Bicycle', 300)">Book Vehicle</button>
+        </div>
+      </div>
+
+      <!-- SCOOTER -->
+      <div class="vehicle-card" data-type="scooter" data-price="500">
+        <div class="vehicle-img-wrap">
+          <div class="vehicle-icon">🛵</div>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Activa Scooter</div>
+          <div style="color:var(--text-light); font-size:0.88rem; margin:0.3rem 0 0.7rem;">Most popular choice for city exploration</div>
+          <div class="vehicle-price">₹500 / day</div>
+          <div class="vehicle-specs">
+            <span class="spec">Automatic</span>
+            <span class="spec">Helmet + Gloves</span>
+            <span class="spec">Fuel efficient</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookVehicle('Activa Scooter', 500)">Book Vehicle</button>
+        </div>
+      </div>
+
+      <!-- SPORTS BIKE -->
+      <div class="vehicle-card" data-type="bike" data-price="900">
+        <div class="vehicle-img-wrap" style="background: linear-gradient(135deg, #1a1a2e, #e65100);">
+          <div class="vehicle-icon">🏍️</div>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Royal Enfield 350</div>
+          <div style="color:var(--text-light); font-size:0.88rem; margin:0.3rem 0 0.7rem;">Adventure bike for long-distance travel</div>
+          <div class="vehicle-price">₹900 / day</div>
+          <div class="vehicle-specs">
+            <span class="spec">Manual gear</span>
+            <span class="spec">350cc</span>
+            <span class="spec">Touring</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookVehicle('Royal Enfield 350', 900)">Book Vehicle</button>
+        </div>
+      </div>
+
+      <!-- HATCHBACK -->
+      <div class="vehicle-card" data-type="car" data-price="1200">
+        <div class="vehicle-img-wrap" style="background: linear-gradient(135deg, #1a1a2e, #0f3460);">
+          <div class="vehicle-icon">🚗</div>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Maruti Swift (Hatchback)</div>
+          <div style="color:var(--text-light); font-size:0.88rem; margin:0.3rem 0 0.7rem;">Compact and fuel-efficient for city drives</div>
+          <div class="vehicle-price">₹1,200 / day</div>
+          <div class="vehicle-specs">
+            <span class="spec">AC</span>
+            <span class="spec">4 Seater</span>
+            <span class="spec">Music System</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookVehicle('Maruti Swift Hatchback', 1200)">Book Vehicle</button>
+        </div>
+      </div>
+
+      <!-- SEDAN -->
+      <div class="vehicle-card" data-type="car" data-price="1800">
+        <div class="vehicle-img-wrap" style="background: linear-gradient(135deg, #16213e, #533483);">
+          <div class="vehicle-icon">🚘</div>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Honda City (Sedan)</div>
+          <div style="color:var(--text-light); font-size:0.88rem; margin:0.3rem 0 0.7rem;">Comfort sedan with premium features</div>
+          <div class="vehicle-price">₹1,800 / day</div>
+          <div class="vehicle-specs">
+            <span class="spec">AC</span>
+            <span class="spec">5 Seater</span>
+            <span class="spec">Sunroof</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookVehicle('Honda City Sedan', 1800)">Book Vehicle</button>
+        </div>
+      </div>
+
+      <!-- SUV -->
+      <div class="vehicle-card" data-type="suv" data-price="2800">
+        <div class="vehicle-img-wrap" style="background: linear-gradient(135deg, #1a1a2e, #2d6a4f);">
+          <div class="vehicle-icon">🚙</div>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Mahindra Scorpio (SUV)</div>
+          <div style="color:var(--text-light); font-size:0.88rem; margin:0.3rem 0 0.7rem;">Powerful SUV for rough terrain and highways</div>
+          <div class="vehicle-price">₹2,800 / day</div>
+          <div class="vehicle-specs">
+            <span class="spec">7 Seater</span>
+            <span class="spec">4WD</span>
+            <span class="spec">AC + Sunroof</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookVehicle('Mahindra Scorpio SUV', 2800)">Book Vehicle</button>
+        </div>
+      </div>
+
+      <!-- LUXURY -->
+      <div class="vehicle-card" data-type="car" data-price="5500">
+        <div class="vehicle-img-wrap" style="background: linear-gradient(135deg, #111, #b8860b);">
+          <div class="vehicle-icon">🏎️</div>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">BMW 5 Series (Luxury)</div>
+          <div style="color:var(--text-light); font-size:0.88rem; margin:0.3rem 0 0.7rem;">Premium luxury experience for special occasions</div>
+          <div class="vehicle-price">₹5,500 / day</div>
+          <div class="vehicle-specs">
+            <span class="spec">Chauffeur option</span>
+            <span class="spec">Leather seats</span>
+            <span class="spec">Premium audio</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookVehicle('BMW 5 Series Luxury', 5500)">Book Vehicle</button>
+        </div>
+      </div>
+
+      <!-- ELECTRIC -->
+      <div class="vehicle-card" data-type="scooter" data-price="450">
+        <div class="vehicle-img-wrap" style="background: linear-gradient(135deg, #0f4c75, #1b6ca8);">
+          <div class="vehicle-icon">⚡</div>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-name">Ola Electric S1</div>
+          <div style="color:var(--text-light); font-size:0.88rem; margin:0.3rem 0 0.7rem;">Zero emission electric scooter, eco-friendly!</div>
+          <div class="vehicle-price">₹450 / day</div>
+          <div class="vehicle-specs">
+            <span class="spec">Electric</span>
+            <span class="spec">Zero emissions</span>
+            <span class="spec">100km range</span>
+          </div>
+          <button class="btn btn-primary btn-full" onclick="bookVehicle('Ola Electric Scooter', 450)">Book Vehicle</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- INFO SECTION -->
+    <div style="margin-top:3rem;">
+      <div class="section-header" style="text-align:left; margin-bottom:1.5rem;">
+        <div class="section-label">📋 Rental Info</div>
+        <h2 class="section-title" style="font-size:1.4rem;">What You Need to Know</h2>
+      </div>
+      <div class="info-grid">
+        <div class="info-box"><h4>🪪 Required Documents</h4><p>Valid driving license, Aadhaar/Passport, and a refundable security deposit.</p></div>
+        <div class="info-box"><h4>⛽ Fuel Policy</h4><p>Vehicles are provided with a full tank. Return with full tank or pay fuel charges.</p></div>
+        <div class="info-box"><h4>🛡️ Insurance Included</h4><p>Basic third-party insurance is included. Comprehensive coverage available at extra cost.</p></div>
+        <div class="info-box"><h4>📞 24/7 Roadside</h4><p>Breakdown assistance and customer support available round the clock.</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="rentals.html">Rentals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Plan</h4>
+      <a href="planner.html">Trip Planner</a>
+      <a href="travel-buddy.html">Travel Buddy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  function filterVehicles() {
+    const type = document.getElementById('vehicle-filter').value;
+    const priceRange = document.getElementById('price-filter').value;
+    const cards = document.querySelectorAll('#vehicles-grid .vehicle-card');
+    cards.forEach(card => {
+      const cardType = card.getAttribute('data-type');
+      const cardPrice = parseInt(card.getAttribute('data-price'));
+      let show = true;
+      if (type !== 'all' && cardType !== type) show = false;
+      if (priceRange === 'budget' && cardPrice >= 500) show = false;
+      if (priceRange === 'mid' && (cardPrice < 500 || cardPrice > 2000)) show = false;
+      if (priceRange === 'premium' && cardPrice <= 2000) show = false;
+      card.style.display = show ? 'block' : 'none';
+    });
+  }
+</script>
+</body>
+</html>

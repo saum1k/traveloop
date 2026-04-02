@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Details – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="travel-buddy.html">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- BREADCRUMB BAR -->
+<div style="background:var(--white); padding:1rem 2rem; border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="breadcrumb" style="justify-content:flex-start; color:var(--text-light);">
+      <a href="index.html" style="color:var(--primary)">Home</a> /
+      <a href="hotels.html" style="color:var(--primary)">Hotels</a> /
+      <span id="hotel-name-crumb">Hotel Details</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<section class="section">
+  <div class="container">
+    <div class="detail-layout">
+
+      <!-- LEFT: Hotel Info -->
+      <div>
+        <div class="detail-main">
+          <img id="hotel-img" class="detail-img" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80" alt="Hotel">
+          <div class="detail-body">
+            <div class="detail-title" id="hotel-name">The Marina Grand</div>
+            <div class="detail-meta">
+              <div id="hotel-rating"></div>
+              <div class="tag">📍 <span id="hotel-area">Marina Beach</span></div>
+              <div class="tag">🏨 Premium Hotel</div>
+            </div>
+            <p style="color:var(--text-light); font-size:0.95rem; line-height:1.8; margin-bottom:1.5rem;">
+              Experience luxury and comfort in the heart of Chennai. Our hotel offers world-class amenities, impeccable service, and stunning views. Whether you're traveling for business or leisure, we ensure an unforgettable stay.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="section-label" style="margin-bottom:0.8rem;">✅ Amenities</div>
+            <div class="amenities-grid" id="hotel-amenities">
+              <!-- Filled by JS -->
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Policies -->
+            <div class="section-label" style="margin-bottom:0.8rem;">📋 Hotel Policies</div>
+            <div class="info-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+              <div class="info-box"><h4>Check-in</h4><p>After 2:00 PM</p></div>
+              <div class="info-box"><h4>Check-out</h4><p>Before 12:00 PM</p></div>
+              <div class="info-box"><h4>Cancellation</h4><p>Free before 48 hrs</p></div>
+              <div class="info-box"><h4>Payment</h4><p>Card, UPI, Cash</p></div>
+            </div>
+
+            <!-- Reviews Section -->
+            <div id="reviews-section"></div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Booking Card -->
+      <div>
+        <div class="booking-card">
+          <div class="section-label" style="margin-bottom:0.5rem;">💰 Price</div>
+          <div class="booking-price" id="hotel-price">₹4,500 <small>/ night</small></div>
+
+          <div class="divider"></div>
+
+          <div class="form-group">
+            <label>Check-in Date</label>
+            <input type="date" id="checkin-date">
+          </div>
+          <div class="form-group">
+            <label>Check-out Date</label>
+            <input type="date" id="checkout-date">
+          </div>
+          <div class="form-group">
+            <label>Number of Nights</label>
+            <input type="number" id="nights-input" value="2" min="1" max="30" onchange="updateTotal()">
+          </div>
+          <div class="form-group">
+            <label>Guests</label>
+            <select>
+              <option>1 Adult</option>
+              <option>2 Adults</option>
+              <option>2 Adults, 1 Child</option>
+              <option>2 Adults, 2 Children</option>
+            </select>
+          </div>
+
+          <div style="background:var(--primary-light); border-radius:var(--radius-sm); padding:1rem; margin-bottom:1.2rem;">
+            <div class="summary-item"><span>Price per night</span><strong id="price-per-night">₹4,500</strong></div>
+            <div class="summary-item"><span>Nights</span><strong id="nights-display">2</strong></div>
+            <div class="summary-item"><span>Total (excl. tax)</span><strong id="subtotal">₹9,000</strong></div>
+          </div>
+
+          <button class="btn btn-primary btn-full btn-lg" onclick="bookNow()">🏨 Book Now</button>
+          <p style="text-align:center; font-size:0.8rem; color:var(--text-light); margin-top:0.7rem;">✓ Free cancellation before 48 hours</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">All Destinations</a>
+      <a href="hotels.html">Hotels</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Set default dates
+  window.addEventListener('DOMContentLoaded', () => {
+    const today = new Date();
+    const tomorrow = new Date(); tomorrow.setDate(today.getDate() + 1);
+    const next3 = new Date(); next3.setDate(today.getDate() + 3);
+    const fmt = d => d.toISOString().split('T')[0];
+    document.getElementById('checkin-date').value = fmt(tomorrow);
+    document.getElementById('checkout-date').value = fmt(next3);
+
+    // Update breadcrumb
+    const hotel = JSON.parse(sessionStorage.getItem('selectedHotel') || '{}');
+    if (hotel.name) document.getElementById('hotel-name-crumb').textContent = hotel.name;
+  });
+
+  function updateTotal() {
+    const nights = parseInt(document.getElementById('nights-input').value) || 1;
+    const hotel = JSON.parse(sessionStorage.getItem('bookingHotel') || sessionStorage.getItem('selectedHotel') || '{}');
+    const price = hotel.price || 4500;
+    document.getElementById('nights-display').textContent = nights;
+    document.getElementById('price-per-night').textContent = formatPrice(price);
+    document.getElementById('subtotal').textContent = formatPrice(price * nights);
+  }
+  function bookNow(){
+
+const hotelName = document.getElementById("hotel-name").innerText;
+
+const priceText = document.getElementById("price-per-night").innerText;
+
+const price = parseInt(priceText.replace(/[₹,]/g,""));
+
+
+// save booking info
+const bookingData = {
+
+city: document.getElementById("hotel-area").innerText,
+
+hotel: hotelName,
+
+price: price
+
+};
+
+
+// store in localStorage
+localStorage.setItem("bookingData", JSON.stringify(bookingData));
+
+
+// go to billing page
+window.location.href = "billing.html";
+
+}
+  // Call updateTotal after hotel loads
+  const origLoad = window.onload;
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(updateTotal, 100);
+  });
+</script>
+</body>
+</html>

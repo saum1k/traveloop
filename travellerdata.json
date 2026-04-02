@@ -1,0 +1,82 @@
+{
+  "chennai":[
+    {
+      "name":"Rahul",
+      "age":23,
+      "gender":"Male",
+      "interests":["Food","Beaches","Shopping"],
+      "budget":"Medium",
+      "trip":"3 days"
+    },
+    {
+      "name":"Priya",
+      "age":25,
+      "gender":"Female",
+      "interests":["Temple","Culture","Photography"],
+      "budget":"Low",
+      "trip":"2 days"
+    },
+    {
+      "name":"Arjun",
+      "age":27,
+      "gender":"Male",
+      "interests":["Nightlife","Cafe","Beach"],
+      "budget":"High",
+      "trip":"4 days"
+    }
+  ],
+
+  "shimla":[
+    {
+      "name":"Rohit",
+      "age":26,
+      "gender":"Male",
+      "interests":["Mountains","Trekking","Snow"],
+      "budget":"Medium",
+      "trip":"5 days"
+    },
+    {
+      "name":"Sneha",
+      "age":24,
+      "gender":"Female",
+      "interests":["Photography","Nature","Cafe"],
+      "budget":"Low",
+      "trip":"3 days"
+    },
+    {
+      "name":"Karan",
+      "age":29,
+      "gender":"Male",
+      "interests":["Adventure","Bike rides"],
+      "budget":"High",
+      "trip":"4 days"
+    }
+  ],
+
+  "varanasi":[
+    {
+      "name":"Amit",
+      "age":30,
+      "gender":"Male",
+      "interests":["Temple","Culture","Spiritual"],
+      "budget":"Medium",
+      "trip":"3 days"
+    },
+    {
+      "name":"Neha",
+      "age":26,
+      "gender":"Female",
+      "interests":["Photography","Ganga Aarti"],
+      "budget":"Low",
+      "trip":"2 days"
+    },
+    {
+      "name":"Vikram",
+      "age":28,
+      "gender":"Male",
+      "interests":["History","Walking tours"],
+      "budget":"Medium",
+      "trip":"4 days"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destination – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html" class="active">Explore</a></li>
+    <!--<li><a href="hotels.html">Hotels</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="rentals.html">Rentals</a></li-->
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="travel-buddy.html">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="explore.html">Explore</a> / <span id="dest-name">Chennai</span></div>
+    <h1 id="dest-name-hero">Chennai</h1>
+    <p id="dest-tagline">The Gateway of South India</p>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<section class="section">
+  <div class="container">
+
+    <!-- Info Grid -->
+    <div class="info-grid mb-3" id="dest-info">
+      <!-- Filled by JS -->
+    </div>
+
+    <!-- Description -->
+    <div style="background:var(--white); border-radius:var(--radius); padding:2rem; box-shadow:var(--shadow); margin-bottom:2rem;">
+      <div class="section-label">📖 About</div>
+      <p id="dest-desc" style="color:var(--text); line-height:1.8; font-size:1.05rem;"></p>
+    </div>
+
+    <!-- Google Map -->
+    <div style="margin-bottom:2.5rem;">
+      <div class="section-header" style="text-align:left; margin-bottom:1rem;">
+        <div class="section-label">🗺️ Map</div>
+        <h2 class="section-title" style="font-size:1.5rem;">Explore on Map</h2>
+      </div>
+      <div class="map-container">
+        <iframe id="map" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Chennai,India&t=m&z=12&output=embed">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Popular Areas -->
+    <div style="margin-bottom:2.5rem;">
+      <div class="section-header" style="text-align:left; margin-bottom:1.5rem;">
+        <div class="section-label">📍 Areas</div>
+        <h2 class="section-title" style="font-size:1.5rem;">Popular Areas to Stay</h2>
+        <p class="section-sub">Click an area to browse hotels</p>
+      </div>
+      <div class="area-grid" id="dest-areas">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+
+    <!-- Tabs: Things to do / Hotels / Restaurants -->
+    <div class="tabs" id="info-tabs">
+      <button class="tab-btn active" onclick="showTab('things', this)">🎯 Things to Do</button>
+      <button class="tab-btn" onclick="showTab('restaurants', this)">🍽️ Restaurants</button>
+      <button class="tab-btn" onclick="showTab('hotels-tab', this)">🏨 All Hotels</button>
+    </div>
+
+    <div id="tab-things">
+      <div class="section-label" style="margin-bottom:1rem;">Top Experiences</div>
+      <div class="things-grid" id="dest-things"></div>
+    </div>
+
+    <div id="tab-restaurants" class="hidden">
+      <div class="section-label" style="margin-bottom:1rem;">Recommended Restaurants</div>
+      <div class="things-grid" id="dest-restaurants"></div>
+    </div>
+
+    <div id="tab-hotels-tab" class="hidden">
+      <div class="section-label" style="margin-bottom:1rem;">Browse Hotels</div>
+      <p style="color:var(--text-light); margin-bottom:1rem;">Select an area above or <a id="all-hotels-link" href="hotels.html" style="color:var(--primary); font-weight:600;">view all hotels →</a></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">All Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="rentals.html">Rentals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Plan</h4>
+      <a href="planner.html">Trip Planner</a>
+      <a href="travel-buddy.html">Travel Buddy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  function showTab(tabId, btn) {
+    document.querySelectorAll('[id^="tab-"]').forEach(el => el.classList.add('hidden'));
+    document.getElementById('tab-' + tabId).classList.remove('hidden');
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>

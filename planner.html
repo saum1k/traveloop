@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Planner – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <!--<li><a href="hotels.html">Hotels</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="rentals.html">Rentals</a></li>-->
+    <li><a href="planner.html" class="active">Planner</a></li>
+    <li><a href="travel-buddy.html">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PLANNER HERO -->
+<div class="planner-hero">
+  <div class="section-label" style="color:rgba(255,255,255,0.8); margin-bottom:0.7rem;">🗓️ Smart Planner</div>
+  <h1>Plan Your Perfect Trip</h1>
+  <p>Tell us your preferences and we'll help you create an unforgettable itinerary</p>
+
+  <div class="planner-steps">
+    <div class="step-pill"><div class="step-num">1</div> Choose Destination</div>
+    <div class="step-pill"><div class="step-num">2</div> Set Dates & Budget</div>
+    <div class="step-pill"><div class="step-num">3</div> Get Your Itinerary</div>
+  </div>
+</div>
+
+<!-- PLANNER FORM -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 380px; gap:2rem; align-items:start;" class="planner-layout">
+
+      <!-- FORM -->
+      <div class="form-card" style="max-width:100%;">
+        <div class="form-title">Trip Details</div>
+        <div class="form-sub">Fill in your preferences to get a personalized itinerary</div>
+
+        <form id="planner-form">
+
+          <!-- Personal -->
+          <div class="section-label" style="margin-bottom:0.8rem; margin-top:0.5rem;">👤 Traveler Info</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="plan-name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" id="plan-email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91 98765 43210">
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Destination -->
+          <div class="section-label" style="margin-bottom:0.8rem;">📍 Destination</div>
+          <div class="form-group">
+            <label>Choose Destination *</label>
+            <select id="plan-dest" required>
+
+            <option value="">Choose Destination</option>
+
+            <option value="chennai">Chennai</option>
+
+            <option value="shimla">Shimla</option>
+
+            <option value="varanasi">Varanasi</option>
+
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Travel Type</label>
+            <select>
+              <option>Solo Travel</option>
+              <option>Couple Trip</option>
+              <option>Family Vacation</option>
+              <option>Friends Group</option>
+              <option>Business Travel</option>
+            </select>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Dates -->
+          <div class="section-label" style="margin-bottom:0.8rem;">📅 Travel Dates</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Departure Date *</label>
+              <input type="date" id="plan-from" required>
+            </div>
+            <div class="form-group">
+              <label>Return Date *</label>
+              <input type="date" id="plan-to" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Travelers</label>
+              <input type="number" value="2" min="1" max="50">
+            </div>
+            <div class="form-group">
+              <label>Children (under 12)</label>
+              <input type="number" value="0" min="0" max="20">
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Budget -->
+          <div class="section-label" style="margin-bottom:0.8rem;">💰 Budget & Preferences</div>
+          <div class="form-group">
+            <label>Total Budget (₹) *</label>
+            <input type="number" id="plan-budget" placeholder="e.g. 30000" required>
+          </div>
+          <div class="form-group">
+            <label>Accommodation Type</label>
+            <select>
+              <option>Budget Hostel</option>
+              <option>2-Star Hotel</option>
+              <option>3-Star Hotel</option>
+              <option>4-Star Hotel</option>
+              <option>5-Star Luxury</option>
+              <option>Resort / Villa</option>
+              <option>Homestay / Airbnb</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Interests (select all that apply)</label>
+            <div style="display:flex; flex-wrap:wrap; gap:0.7rem; margin-top:0.5rem;">
+              <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox"> 🏄 Adventure</label>
+              <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox" checked> 🏛️ Culture & Heritage</label>
+              <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox" checked> 🍛 Food & Cuisine</label>
+              <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox"> 🌿 Nature & Wildlife</label>
+              <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox"> 🛍️ Shopping</label>
+              <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox"> 💆 Wellness & Spa</label>
+              <label style="display:flex; align-items:center; gap:0.4rem; font-weight:400; cursor:pointer;"><input type="checkbox"> 📸 Photography</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Special Requirements</label>
+            <textarea rows="3" placeholder="Any dietary needs, accessibility requirements, or special requests..."></textarea>
+          </div>
+
+          <div id="planner-msg"></div>
+          <button type="submit" class="btn btn-primary btn-full btn-lg mt-2" style="border-radius:var(--radius-sm);">🗓️ Create My Itinerary</button>
+        </form>
+        <div id="planner-results" class="form-card" style="margin-top:20px; display:none;">
+  <div class="form-title">📋 Your Smart Itinerary</div>
+
+  <div id="day-plan"></div>
+
+  <div class="divider"></div>
+
+  <div id="hotel-suggestions"></div>
+
+  <div class="divider"></div>
+
+  <div id="restaurant-suggestions"></div>
+
+  <div class="divider"></div>
+
+  <div id="transport-tips"></div>
+
+  <div class="divider"></div>
+
+  <div id="budget-breakdown"></div>
+
+</div>
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div>
+        <!-- Benefits -->
+        <div class="form-card" style="max-width:100%; margin-bottom:1.2rem;">
+          <div class="form-title" style="font-size:1.2rem;">🎯 What You Get</div>
+          <div style="display:flex; flex-direction:column; gap:0.8rem; margin-top:1rem;">
+            <div class="thing-card">
+              <div class="thing-icon">🗺️</div>
+              <div class="thing-info"><h4>Day-by-Day Itinerary</h4><p>Detailed schedule for each day</p></div>
+            </div>
+            <div class="thing-card">
+              <div class="thing-icon">🏨</div>
+              <div class="thing-info"><h4>Hotel Recommendations</h4><p>Curated hotels within budget</p></div>
+            </div>
+            <div class="thing-card">
+              <div class="thing-icon">🍽️</div>
+              <div class="thing-info"><h4>Restaurant Guide</h4><p>Best local dining experiences</p></div>
+            </div>
+            <div class="thing-card">
+              <div class="thing-icon">🚗</div>
+              <div class="thing-info"><h4>Transport Tips</h4><p>Best ways to get around</p></div>
+            </div>
+            <div class="thing-card">
+              <div class="thing-icon">💰</div>
+              <div class="thing-info"><h4>Budget Breakdown</h4><p>Cost estimates for everything</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Destinations -->
+        <div class="form-card" style="max-width:100%;">
+          <div class="form-title" style="font-size:1.1rem;">🔥 Trending Trips</div>
+          <div style="margin-top:1rem; display:flex; flex-direction:column; gap:0.7rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:0.7rem; background:var(--bg); border-radius:var(--radius-sm);">
+              <span style="font-weight:600; font-size:0.9rem;">🌊 Chennai 4D/3N</span>
+              <span style="color:var(--primary); font-weight:700; font-size:0.9rem;">₹12,000</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:0.7rem; background:var(--bg); border-radius:var(--radius-sm);">
+              <span style="font-weight:600; font-size:0.9rem;">🏖️ Goa 5D/4N</span>
+              <span style="color:var(--primary); font-weight:700; font-size:0.9rem;">₹18,000</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:0.7rem; background:var(--bg); border-radius:var(--radius-sm);">
+              <span style="font-weight:600; font-size:0.9rem;">🌴 Kerala 6D/5N</span>
+              <span style="color:var(--primary); font-weight:700; font-size:0.9rem;">₹22,000</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:0.7rem; background:var(--bg); border-radius:var(--radius-sm);">
+              <span style="font-weight:600; font-size:0.9rem;">⛰️ Manali 7D/6N</span>
+              <span style="color:var(--primary); font-weight:700; font-size:0.9rem;">₹25,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">Destinations</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="rentals.html">Rentals</a>
+    </div>
+    <div class="footer-col">
+      <h4>Plan</h4>
+      <a href="planner.html">Trip Planner</a>
+      <a href="travel-buddy.html">Travel Buddy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Set min dates
+  document.addEventListener('DOMContentLoaded', () => {
+    const today = new Date().toISOString().split('T')[0];
+    const planFrom = document.getElementById('plan-from');
+    const planTo = document.getElementById('plan-to');
+    if (planFrom) planFrom.min = today;
+    if (planFrom && planTo) {
+      planFrom.addEventListener('change', () => { planTo.min = planFrom.value; });
+    }
+
+    // Responsive planner layout
+    const layout = document.querySelector('.planner-layout');
+    if (layout && window.innerWidth < 900) {
+      layout.style.gridTemplateColumns = '1fr';
+    }
+  });
+</script>
+<script>
+
+document.getElementById("planner-form").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+generateSmartPlan();
+
+});
+
+
+async function generateSmartPlan(){
+
+const destination =
+document.getElementById("plan-dest").value.toLowerCase();
+
+const budget =
+document.getElementById("plan-budget").value;
+
+const from =
+document.getElementById("plan-from").value;
+
+const to =
+document.getElementById("plan-to").value;
+
+
+// load json
+const response = await fetch("data.json");
+
+const data = await response.json();
+
+
+// get city object
+const city = data[destination];
+
+if(!city){
+
+alert("City not found in database");
+
+return;
+
+}
+
+
+// merge data from all areas
+let allHotels = [];
+let allRestaurants = [];
+let allAttractions = [];
+let allEvents = [];
+
+Object.values(city.areas).forEach(area => {
+
+allHotels.push(...area.hotels);
+
+allRestaurants.push(...area.restaurants);
+
+allAttractions.push(...area.attractions);
+
+allEvents.push(...area.events);
+
+});
+
+
+// calculate days
+const days =
+Math.max(1,
+Math.ceil(
+(new Date(to) - new Date(from))/(1000*60*60*24)
+)+1
+);
+
+
+// show result section
+document.getElementById("planner-results").style.display="block";
+
+
+// itinerary
+let dayHTML =
+"<h3>🗺️ Day-by-Day Itinerary</h3>";
+
+for(let i=0;i<days;i++){
+
+const place =
+allAttractions[i % allAttractions.length];
+
+dayHTML += `
+<p>
+<b>Day ${i+1}</b>:
+Visit ${place.name}
+(${place.type})
+</p>
+`;
+
+}
+
+document.getElementById("day-plan").innerHTML =
+dayHTML;
+
+
+// hotels
+let hotelHTML =
+"<h3>🏨 Hotel Recommendations</h3>";
+
+allHotels.slice(0,5).forEach(hotel=>{
+
+hotelHTML += `
+<p>
+
+${hotel.name}
+⭐ ${hotel.rating}
+₹${hotel.price}
+
+</p>
+`;
+
+});
+
+document.getElementById("hotel-suggestions").innerHTML =
+hotelHTML;
+
+
+// restaurants
+let foodHTML =
+"<h3>🍽️ Restaurant Guide</h3>";
+
+allRestaurants.slice(0,5).forEach(food=>{
+
+foodHTML += `
+<p>
+
+${food.name}
+Avg cost ₹${food.price}
+
+</p>
+`;
+
+});
+
+document.getElementById("restaurant-suggestions").innerHTML =
+foodHTML;
+
+
+// transport
+document.getElementById("transport-tips").innerHTML =
+
+`
+<h3>🚗 Transport Tips</h3>
+
+<p>Local taxi available</p>
+
+<p>Rental bikes available</p>
+
+<p>Public transport accessible</p>
+
+`;
+
+
+// events
+let eventHTML =
+"<h3>🎉 Events & Festivals</h3>";
+
+allEvents.slice(0,3).forEach(event=>{
+
+eventHTML += `
+
+<p>
+
+${event.name}
+
+${event.date}
+
+${event.location}
+
+₹${event.price}
+
+</p>
+
+`;
+
+});
+
+document.getElementById("transport-tips").innerHTML += eventHTML;
+
+
+// budget split
+document.getElementById("budget-breakdown").innerHTML =
+
+`
+
+<h3>💰 Budget Breakdown</h3>
+
+<p>Hotel: ₹${Math.round(budget*0.4)}</p>
+
+<p>Food: ₹${Math.round(budget*0.2)}</p>
+
+<p>Transport: ₹${Math.round(budget*0.2)}</p>
+
+<p>Activities: ₹${Math.round(budget*0.2)}</p>
+
+`;
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout & Payment – Traveloop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">Travel<span>oop</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="planner.html">Planner</a></li>
+    <li><a href="travel-buddy.html">Travel Buddy</a></li>
+    <li><a href="login.html" class="btn-login" id="login-btn">Login</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="padding:2.5rem 2rem;">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Checkout</div>
+    <h1 style="font-size:2rem;">Secure Checkout</h1>
+    <p>Complete your booking safely</p>
+  </div>
+</div>
+
+<!-- MAIN -->
+<section class="section">
+  <div class="container">
+    <div class="billing-layout">
+
+      <!-- LEFT: Payment Form -->
+      <div>
+        <!-- Security Badge -->
+        <div style="display:flex; align-items:center; gap:0.7rem; background:var(--white); padding:1rem 1.5rem; border-radius:var(--radius-sm); box-shadow:var(--shadow); margin-bottom:1.5rem; font-size:0.9rem; color:var(--text-light);">
+          <span style="font-size:1.5rem;">🔒</span>
+          <span>Your payment is secured with 256-bit SSL encryption. We never store your card details.</span>
+        </div>
+
+        <div class="form-card" style="max-width:100%;">
+          <div class="form-title">Payment Details</div>
+          <div class="form-sub">Enter your card information to complete booking</div>
+
+          <form id="payment-form" onsubmit="submitPayment(event)">
+
+            <!-- Personal Info -->
+            <div class="section-label" style="margin-bottom:0.8rem;">👤 Personal Information</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" id="pay-name" placeholder="As on card" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" id="pay-email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 98765 43210">
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Card Details -->
+            <div class="section-label" style="margin-bottom:0.8rem;">💳 Card Details</div>
+
+            <!-- Payment Method Selection -->
+            <div class="tabs" style="margin-bottom:1.2rem;">
+              <button type="button" class="tab-btn active" onclick="selectPayMethod(this, 'card')">💳 Credit/Debit Card</button>
+              <button type="button" class="tab-btn" onclick="selectPayMethod(this, 'upi')">📱 UPI</button>
+              <button type="button" class="tab-btn" onclick="selectPayMethod(this, 'netbanking')">🏦 Net Banking</button>
+            </div>
+
+            <!-- Card Fields -->
+            <div id="card-fields">
+              <div class="form-group">
+                <label>Card Number *</label>
+                <input type="text" id="pay-card" class="card-input" placeholder="1234 5678 9012 3456" maxlength="19" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Expiry Date *</label>
+                  <input type="text" id="pay-expiry" placeholder="MM/YY" maxlength="5" required oninput="formatExpiry(this)">
+                </div>
+                <div class="form-group">
+                  <label>CVV *</label>
+                  <input type="password" id="pay-cvv" placeholder="•••" maxlength="4" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPI Fields -->
+            <div id="upi-fields" class="hidden">
+              <div class="form-group">
+                <label>UPI ID *</label>
+                <input type="text" placeholder="yourname@upi">
+              </div>
+            </div>
+
+            <!-- Net Banking Fields -->
+            <div id="netbanking-fields" class="hidden">
+              <div class="form-group">
+                <label>Select Bank *</label>
+                <select>
+                  <option>State Bank of India</option>
+                  <option>HDFC Bank</option>
+                  <option>ICICI Bank</option>
+                  <option>Axis Bank</option>
+                  <option>Kotak Mahindra Bank</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="pay-msg"></div>
+
+            <button type="submit" class="btn btn-primary btn-full btn-lg mt-2" id="pay-btn" style="border-radius:var(--radius-sm);">
+              🔒 Pay Now
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT: Booking Summary -->
+      <div>
+        <div class="summary-card">
+          <div class="summary-title">📋 Booking Summary</div>
+          <div id="booking-summary">
+            <div class="summary-item"><span>Loading...</span></div>
+          </div>
+          <div class="summary-total">
+            <span>Grand Total</span>
+            <span class="total-price" id="billing-total">₹0</span>
+          </div>
+          <p style="font-size:0.8rem; color:var(--text-light); margin-top:0.7rem; text-align:center;">Inclusive of all taxes and fees</p>
+        </div>
+
+        <!-- Trust Badges -->
+        <div style="background:var(--white); border-radius:var(--radius); padding:1.5rem; box-shadow:var(--shadow); margin-top:1.2rem;">
+          <div class="section-label" style="margin-bottom:0.8rem;">Why Book With Us</div>
+          <div style="display:flex; flex-direction:column; gap:0.8rem;">
+            <div style="display:flex; gap:0.7rem; align-items:flex-start; font-size:0.88rem;">
+              <span>✅</span> <span><strong>Free Cancellation</strong> up to 48 hours before check-in</span>
+            </div>
+            <div style="display:flex; gap:0.7rem; align-items:flex-start; font-size:0.88rem;">
+              <span>✅</span> <span><strong>Best Price Guarantee</strong> – We match any lower price</span>
+            </div>
+            <div style="display:flex; gap:0.7rem; align-items:flex-start; font-size:0.88rem;">
+              <span>✅</span> <span><strong>Instant Confirmation</strong> by email and SMS</span>
+            </div>
+            <div style="display:flex; gap:0.7rem; align-items:flex-start; font-size:0.88rem;">
+              <span>✅</span> <span><strong>24/7 Customer Support</strong> throughout your journey</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo">Travel<span>oop</span></span>
+      <p>Your ultimate travel companion.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="explore.html">All Destinations</a>
+      <a href="hotels.html">Hotels</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Traveloop. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+
+function selectPayMethod(btn, method) {
+
+document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+
+btn.classList.add('active');
+
+document.getElementById('card-fields').classList.add('hidden');
+document.getElementById('upi-fields').classList.add('hidden');
+document.getElementById('netbanking-fields').classList.add('hidden');
+
+document.getElementById(method === 'card' ? 'card-fields' : method + '-fields').classList.remove('hidden');
+
+}
+
+
+function formatExpiry(input) {
+
+let val = input.value.replace(/\D/g, '').substring(0, 4);
+
+if (val.length >= 2)
+
+val = val.substring(0,2) + '/' + val.substring(2);
+
+input.value = val;
+
+}
+
+
+// Card number formatting
+document.getElementById('pay-card').addEventListener('input', function() {
+
+let val = this.value.replace(/\D/g,'').substring(0,16);
+
+this.value = val.match(/.{1,4}/g)?.join(' ') || val;
+
+});
+
+// load booking details from previous page
+
+const booking = JSON.parse(localStorage.getItem("bookingData"));
+
+if(booking){
+
+document.getElementById("booking-summary").innerHTML = `
+
+<div class="summary-item">
+
+<span>${booking.hotel}</span>
+
+<span>₹${booking.price}</span>
+
+</div>
+
+`;
+
+document.getElementById("billing-total").innerText = "₹" + booking.price;
+
+}
+
+/* NEW FUNCTION — saves booking to database */
+
+async function submitPayment(event){
+
+event.preventDefault();
+
+
+// check login
+const user = JSON.parse(localStorage.getItem("user"));
+
+if(!user){
+
+alert("Please login first");
+
+window.location.href="login.html";
+
+return;
+
+}
+
+
+// detect payment method
+let paymentMethod = "card";
+
+if(document.querySelector(".tab-btn.active").innerText.includes("UPI")){
+
+paymentMethod = "upi";
+
+}
+
+if(document.querySelector(".tab-btn.active").innerText.includes("Net")){
+
+paymentMethod = "netbanking";
+
+}
+
+
+// demo booking data
+const bookingData = {
+
+user_id: user.id,
+
+destination_city: booking.city,
+
+hotel_or_vehicle: booking.hotel,
+
+price: booking.price,
+
+payment_method: paymentMethod,
+
+travel_date: "2026-05-01"
+
+};
+
+
+try{
+
+const response = await fetch("http://localhost:5000/api/bookings",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body: JSON.stringify(bookingData)
+
+});
+
+
+const result = await response.json();
+
+
+if(result.success){
+
+alert("Booking saved in database");
+
+}
+else{
+
+alert("Booking failed");
+
+}
+
+}
+catch(error){
+
+console.log(error);
+
+alert("Server error");
+
+}
+
+}
+
+</script>
+</body>
+</html>

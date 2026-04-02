@@ -1,0 +1,4199 @@
+{
+  "chennai": {
+    "areas": {
+      "t-nagar": {
+        "hotels": [
+          {
+            "name": "The Residency Towers",
+            "rating": 4.5,
+            "price": 5500,
+            "amenities": [
+              "WiFi",
+              "Restaurant",
+              "Pool",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Grand Chennai by GRT Hotels",
+            "rating": 4.6,
+            "price": 6000,
+            "amenities": [
+              "Laundry",
+              "AC",
+              "Wheelchair Accessible",
+              "Spa",
+              "Gym"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "The Accord Metropolitan",
+            "rating": 4.4,
+            "price": 5800,
+            "amenities": [
+              "WiFi",
+              "AC",
+              "Pool",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Green Park Chennai",
+            "rating": 4.3,
+            "price": 5200,
+            "amenities": [
+              "Wheelchair Accessible",
+              "Pool",
+              "Laundry",
+              "Gym"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "The Raintree St. Mary\u2019s Road",
+            "rating": 4.6,
+            "price": 6500,
+            "amenities": [
+              "Bar",
+              "Pet Friendly",
+              "Restaurant",
+              "WiFi",
+              "Parking"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Taj Coromandel",
+            "rating": 4.7,
+            "price": 8000,
+            "amenities": [
+              "Room Service",
+              "Restaurant",
+              "Parking",
+              "Pool",
+              "Laundry",
+              "WiFi",
+              "Gym"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "The Park Chennai",
+            "rating": 4.2,
+            "price": 5000,
+            "amenities": [
+              "AC",
+              "Room Service",
+              "Spa",
+              "Restaurant",
+              "WiFi",
+              "Pet Friendly",
+              "Pool"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Saravana Bhavan",
+            "price": 800
+          },
+          {
+            "name": "Absolute Barbecues",
+            "price": 1500
+          },
+          {
+            "name": "Barbeque Nation",
+            "price": 1400
+          },
+          {
+            "name": "Sangeetha Veg Restaurant",
+            "price": 700
+          },
+          {
+            "name": "Annalakshmi Restaurant",
+            "price": 1000
+          },
+          {
+            "name": "Kakada Ramprasad",
+            "price": 900
+          },
+          {
+            "name": "The Pasta Bar Veneto",
+            "price": 1200
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Zoomcar Chennai",
+            "price": 2500,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Revv Car Rentals",
+            "price": 2400,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Avis India",
+            "price": 3000,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Royal Brothers Bike Rentals",
+            "price": 1200,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Drivezy",
+            "price": 2000,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Pondy Bazaar",
+            "type": "Shopping"
+          },
+          {
+            "name": "Panagal Park",
+            "type": "Park"
+          },
+          {
+            "name": "Natesan Park",
+            "type": "Park"
+          },
+          {
+            "name": "Ranganathan Street",
+            "type": "Shopping"
+          },
+          {
+            "name": "T Nagar Market",
+            "type": "Market"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Apollo Hospital Greams Road",
+            "contact": "+91 44 28293333"
+          },
+          {
+            "name": "Sankara Nethralaya",
+            "contact": "+91 44 28271616"
+          },
+          {
+            "name": "Kauvery Hospital Chennai",
+            "contact": "+91 44 40006000"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "T Nagar Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Pondy Bazaar Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil T Nagar",
+            "contact": "+91 44 24345678"
+          },
+          {
+            "name": "HP Petrol Pump GN Chetty Road",
+            "contact": "+91 44 28151234"
+          }
+        ],
+        "events": [
+          {"name":"Street Food Festival","type":"Food","date":"Daily","time":"5PM-11PM","location":"Pondy Bazaar","price":200},
+          {"name":"Carnatic Music Night","type":"Music","date":"Weekends","time":"6PM-9PM","location":"Sabha Hall","price":500},
+          {"name":"Night Shopping Carnival","type":"Shopping","date":"Fri-Sun","time":"7PM-12AM","location":"Ranganathan Street","price":0}
+        ]
+      },
+      "adyar": {
+        "hotels": [
+          {
+            "name": "The Leela Palace Chennai",
+            "rating": 4.8,
+            "price": 9000,
+            "amenities": [
+              "Gym",
+              "AC",
+              "Wheelchair Accessible",
+              "Restaurant"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Somerset Greenways Chennai",
+            "rating": 4.6,
+            "price": 8500,
+            "amenities": [
+              "Pet Friendly",
+              "Pool",
+              "AC",
+              "WiFi",
+              "Spa",
+              "Gym"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Fortune Select Palms",
+            "rating": 4.5,
+            "price": 5200,
+            "amenities": [
+              "AC",
+              "Pool",
+              "Laundry",
+              "Gym",
+              "Restaurant",
+              "Spa"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Raj Park Hotel Chennai",
+            "rating": 4.2,
+            "price": 4500,
+            "amenities": [
+              "Parking",
+              "Room Service",
+              "Spa",
+              "Pool",
+              "Restaurant",
+              "Pet Friendly"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Green Meadows Resort",
+            "rating": 4.3,
+            "price": 4800,
+            "amenities": [
+              "Pet Friendly",
+              "Spa",
+              "Parking",
+              "Wheelchair Accessible"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Esthell Hotel",
+            "rating": 4.1,
+            "price": 4000,
+            "amenities": [
+              "Parking",
+              "Bar",
+              "Gym",
+              "Restaurant",
+              "Pool"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Keys Select Hotel Katti-Ma",
+            "rating": 4.0,
+            "price": 3800,
+            "amenities": [
+              "WiFi",
+              "Pool",
+              "Laundry",
+              "Room Service",
+              "Gym",
+              "Parking"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Prems Graama Bhojanam",
+            "price": 800
+          },
+          {
+            "name": "Rain Forest Restaurant",
+            "price": 1200
+          },
+          {
+            "name": "Hamsa Restaurant",
+            "price": 1500
+          },
+          {
+            "name": "Bombay Brasserie",
+            "price": 1400
+          },
+          {
+            "name": "Another Kitchen",
+            "price": 1300
+          },
+          {
+            "name": "Library Blu",
+            "price": 2000
+          },
+          {
+            "name": "AB's Absolute Barbecues",
+            "price": 1500
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Zoomcar Adyar",
+            "price": 2500,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Revv Adyar",
+            "price": 2400,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Royal Brothers",
+            "price": 1200,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Drivezy",
+            "price": 2000,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Onroadz Rentals",
+            "price": 2200,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Besant Nagar Beach",
+            "type": "Beach"
+          },
+          {
+            "name": "Elliot\u2019s Beach",
+            "type": "Beach"
+          },
+          {
+            "name": "Theosophical Society",
+            "type": "Nature"
+          },
+          {
+            "name": "Broken Bridge",
+            "type": "Viewpoint"
+          },
+          {
+            "name": "Adyar River",
+            "type": "Nature"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Fortis Malar Hospital",
+            "contact": "+91 44 42892222"
+          },
+          {
+            "name": "Apollo Speciality Hospital OMR",
+            "contact": "+91 44 33221111"
+          },
+          {
+            "name": "Global Hospital Chennai",
+            "contact": "+91 44 44777000"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Adyar Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Besant Nagar Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Adyar",
+            "contact": "+91 44 24412345"
+          },
+          {
+            "name": "HP Petrol Pump Adyar",
+            "contact": "+91 44 24425678"
+          }
+        ],
+         "events": [
+          {"name":"Beach Yoga","type":"Wellness","date":"Daily","time":"6AM","location":"Besant Nagar Beach","price":150},
+          {"name":"Open Mic Night","type":"Entertainment","date":"Friday","time":"7PM","location":"Cafe Spaces","price":200},
+          {"name":"Nature Walk","type":"Outdoor","date":"Weekends","time":"6AM","location":"Theosophical Society","price":50}
+        ]
+      },
+      "velachery": {
+        "hotels": [
+          {
+            "name": "Feathers Hotel Chennai",
+            "rating": 4.6,
+            "price": 7000,
+            "amenities": [
+              "Pool",
+              "Pet Friendly",
+              "Room Service",
+              "Laundry"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Lemon Tree Hotel Shimona",
+            "rating": 4.3,
+            "price": 4800,
+            "amenities": [
+              "Gym",
+              "Spa",
+              "Bar",
+              "Parking",
+              "Restaurant",
+              "AC",
+              "Laundry"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Holiday Inn Chennai OMR",
+            "rating": 4.5,
+            "price": 6000,
+            "amenities": [
+              "Laundry",
+              "Pet Friendly",
+              "Gym",
+              "Spa",
+              "Room Service",
+              "AC"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Park Plaza Chennai OMR",
+            "rating": 4.4,
+            "price": 5500,
+            "amenities": [
+              "Wheelchair Accessible",
+              "Bar",
+              "AC",
+              "WiFi",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Turyaa Chennai",
+            "rating": 4.3,
+            "price": 5200,
+            "amenities": [
+              "Spa",
+              "Parking",
+              "Gym",
+              "AC",
+              "Pet Friendly"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Zone by The Park OMR",
+            "rating": 4.2,
+            "price": 4500,
+            "amenities": [
+              "Pet Friendly",
+              "Bar",
+              "Wheelchair Accessible",
+              "Restaurant",
+              "WiFi",
+              "Room Service",
+              "Gym"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Ginger Hotel Chennai",
+            "rating": 4.0,
+            "price": 3000,
+            "amenities": [
+              "Spa",
+              "Wheelchair Accessible",
+              "Restaurant",
+              "Room Service"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Coal Barbecues",
+            "price": 1400
+          },
+          {
+            "name": "Barbeque Nation Velachery",
+            "price": 1500
+          },
+          {
+            "name": "Absolute Barbecues Velachery",
+            "price": 1500
+          },
+          {
+            "name": "Yaa Mohaideen Biryani",
+            "price": 600
+          },
+          {
+            "name": "Palmshore Restaurant",
+            "price": 1200
+          },
+          {
+            "name": "Sangeetha Veg Restaurant",
+            "price": 700
+          },
+          {
+            "name": "Dindigul Thalappakatti",
+            "price": 900
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Zoomcar Velachery",
+            "price": 2500,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Revv Velachery",
+            "price": 2400,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Drivezy",
+            "price": 2000,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Royal Brothers",
+            "price": 1200,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Avis Rentals",
+            "price": 3000,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Phoenix Marketcity",
+            "type": "Mall"
+          },
+          {
+            "name": "Velachery Lake",
+            "type": "Lake"
+          },
+          {
+            "name": "Grand Square Mall",
+            "type": "Mall"
+          },
+          {
+            "name": "Taramani IT Park",
+            "type": "Business"
+          },
+          {
+            "name": "Guindy National Park",
+            "type": "Nature"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Prashanth Super Speciality Hospital",
+            "contact": "+91 44 22533333"
+          },
+          {
+            "name": "Dr Kamakshi Memorial Hospital",
+            "contact": "+91 44 22447777"
+          },
+          {
+            "name": "Apollo Clinic Velachery",
+            "contact": "+91 44 22334444"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Velachery Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Madipakkam Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Velachery",
+            "contact": "+91 44 22223333"
+          },
+          {
+            "name": "HP Petrol Pump Velachery",
+            "contact": "+91 44 22224444"
+          }
+        ],
+        "events": [
+          {"name":"Gaming Tournament","type":"Gaming","date":"Daily","time":"2PM","location":"Phoenix Mall","price":300},
+          {"name":"Standup Comedy","type":"Comedy","date":"Weekends","time":"8PM","location":"Clubs","price":400},
+          {"name":"Food Truck Fest","type":"Food","date":"Fri-Sun","time":"6PM","location":"Main Road","price":250}
+        ]
+      },
+      "mylapore": {
+        "hotels": [
+          {
+            "name": "The Raintree Hotel",
+            "rating": 4.6,
+            "price": 6500,
+            "amenities": [
+              "Restaurant",
+              "Gym",
+              "Parking",
+              "Bar"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Savera Hotel",
+            "rating": 4.2,
+            "price": 5000,
+            "amenities": [
+              "Laundry",
+              "Restaurant",
+              "Wheelchair Accessible",
+              "Parking"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Shelter",
+            "rating": 4.1,
+            "price": 4200,
+            "amenities": [
+              "Spa",
+              "Restaurant",
+              "Wheelchair Accessible",
+              "Pool"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "New Woodlands Hotel",
+            "rating": 4.3,
+            "price": 4500,
+            "amenities": [
+              "Room Service",
+              "Parking",
+              "Wheelchair Accessible",
+              "Pet Friendly",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Raj Park Hotel",
+            "rating": 4.2,
+            "price": 4800,
+            "amenities": [
+              "Bar",
+              "WiFi",
+              "AC",
+              "Room Service",
+              "Restaurant",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "The Residency Chennai",
+            "rating": 4.3,
+            "price": 5200,
+            "amenities": [
+              "Pool",
+              "Pet Friendly",
+              "AC",
+              "Spa"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Supreme",
+            "rating": 4.0,
+            "price": 3500,
+            "amenities": [
+              "AC",
+              "Wheelchair Accessible",
+              "Parking",
+              "Pet Friendly",
+              "Bar",
+              "Restaurant",
+              "Laundry"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Rayar Mess",
+            "price": 600
+          },
+          {
+            "name": "Mylai Karpagambal Mess",
+            "price": 700
+          },
+          {
+            "name": "Sangeetha Restaurant",
+            "price": 800
+          },
+          {
+            "name": "Anjappar Chettinad",
+            "price": 900
+          },
+          {
+            "name": "Amma Mess",
+            "price": 500
+          },
+          {
+            "name": "Meenakshi Bhavan",
+            "price": 650
+          },
+          {
+            "name": "Kasi Vinayaga Mess",
+            "price": 550
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Zoomcar Mylapore",
+            "price": 2500,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Revv Mylapore",
+            "price": 2400,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Drivezy",
+            "price": 2000,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Royal Brothers",
+            "price": 1200,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Avis Rentals",
+            "price": 3000,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Kapaleeshwarar Temple",
+            "type": "Temple"
+          },
+          {
+            "name": "Santhome Basilica",
+            "type": "Church"
+          },
+          {
+            "name": "Marina Beach",
+            "type": "Beach"
+          },
+          {
+            "name": "Mylapore Tank",
+            "type": "Heritage"
+          },
+          {
+            "name": "Luz Corner",
+            "type": "Market"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "St Isabel Hospital",
+            "contact": "+91 44 24991000"
+          },
+          {
+            "name": "Apollo Spectra Hospital",
+            "contact": "+91 44 40004000"
+          },
+          {
+            "name": "Billroth Hospital",
+            "contact": "+91 44 24936000"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Mylapore Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Santhome Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Mylapore",
+            "contact": "+91 44 24980000"
+          },
+          {
+            "name": "HP Petrol Pump Mylapore",
+            "contact": "+91 44 24981111"
+          }
+        ],
+        "events": [
+          {"name":"Temple Festival","type":"Religious","date":"Daily","time":"5AM-9PM","location":"Kapaleeshwarar Temple","price":0},
+          {"name":"Classical Dance Show","type":"Cultural","date":"Weekends","time":"6PM","location":"Cultural Hall","price":300},
+          {"name":"Heritage Walk","type":"Tour","date":"Sat-Sun","time":"6AM","location":"Mylapore Streets","price":100}
+        ]
+      },
+      "anna-nagar": {
+        "hotels": [
+          {
+            "name": "Radisson Blu Hotel Chennai",
+            "rating": 4.5,
+            "price": 6500,
+            "amenities": [
+              "Wheelchair Accessible",
+              "Pet Friendly",
+              "Gym",
+              "Pool",
+              "Laundry",
+              "Room Service"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Green Park Hotel Chennai",
+            "rating": 4.3,
+            "price": 5200,
+            "amenities": [
+              "Gym",
+              "Spa",
+              "Room Service",
+              "Bar",
+              "Wheelchair Accessible",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "The Accord Metropolitan",
+            "rating": 4.4,
+            "price": 5800,
+            "amenities": [
+              "Pool",
+              "AC",
+              "Room Service",
+              "WiFi",
+              "Laundry"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Global Residency",
+            "rating": 4.2,
+            "price": 4000,
+            "amenities": [
+              "WiFi",
+              "AC",
+              "Laundry",
+              "Pool",
+              "Spa"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "FabHotel Flamingo Anna Nagar",
+            "rating": 4.0,
+            "price": 3200,
+            "amenities": [
+              "Room Service",
+              "AC",
+              "Wheelchair Accessible",
+              "Pool"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Blu Ivy Serviced Apartments",
+            "rating": 4.1,
+            "price": 3500,
+            "amenities": [
+              "Spa",
+              "Bar",
+              "Pool",
+              "Wheelchair Accessible",
+              "Parking",
+              "Room Service"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hira Niwas Guest House",
+            "rating": 4.0,
+            "price": 3000,
+            "amenities": [
+              "Pool",
+              "Bar",
+              "Gym",
+              "Laundry",
+              "AC",
+              "WiFi",
+              "Room Service"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Murugan Idli Shop",
+            "price": 300
+          },
+          {
+            "name": "Dindigul Thalappakatti",
+            "price": 900
+          },
+          {
+            "name": "Anjappar Chettinad Restaurant",
+            "price": 1200
+          },
+          {
+            "name": "Palmshore Restaurant",
+            "price": 1500
+          },
+          {
+            "name": "Little Italy",
+            "price": 1200
+          },
+          {
+            "name": "Urban Spatula",
+            "price": 1000
+          },
+          {
+            "name": "Sangeetha Veg Restaurant",
+            "price": 700
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Zoomcar Anna Nagar",
+            "price": 2500,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Revv Anna Nagar",
+            "price": 2400,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Drivezy",
+            "price": 2000,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Royal Brothers",
+            "price": 1200,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Avis Rentals",
+            "price": 3000,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Anna Nagar Tower Park",
+            "type": "Park"
+          },
+          {
+            "name": "VR Chennai Mall",
+            "type": "Mall"
+          },
+          {
+            "name": "Skywalk Mall",
+            "type": "Mall"
+          },
+          {
+            "name": "Roundtana",
+            "type": "Landmark"
+          },
+          {
+            "name": "Shanthi Colony Market",
+            "type": "Market"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Sundaram Medical Foundation",
+            "contact": "+91 44 26144100"
+          },
+          {
+            "name": "KHM Hospital",
+            "contact": "+91 44 26212222"
+          },
+          {
+            "name": "Apollo First Med Hospital",
+            "contact": "+91 44 28211111"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Anna Nagar Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Koyambedu Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Anna Nagar",
+            "contact": "+91 44 26150000"
+          },
+          {
+            "name": "HP Petrol Pump Anna Nagar",
+            "contact": "+91 44 26151111"
+          }
+        ],
+        "events": [
+          {"name":"Park Fitness Bootcamp","type":"Fitness","date":"Daily","time":"6AM","location":"Anna Nagar Tower Park","price":100},
+          {"name":"Shopping Expo","type":"Shopping","date":"Till May","time":"10AM-9PM","location":"Mall","price":50},
+          {"name":"Kids Carnival","type":"Family","date":"Weekends","time":"4PM","location":"Park Grounds","price":200}
+        ]
+      }
+    }
+  },
+  "shimla": {
+    "areas": {
+      "mall-road": {
+        "hotels": [
+          {
+            "name": "Clarkes Hotel Shimla",
+            "rating": 4.6,
+            "price": 6500,
+            "amenities": [
+              "Room Service",
+              "Gym",
+              "Spa",
+              "Mountain View",
+              "WiFi",
+              "Laundry",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Willow Banks",
+            "rating": 4.5,
+            "price": 5200,
+            "amenities": [
+              "WiFi",
+              "Gym",
+              "Room Service",
+              "AC"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Combermere",
+            "rating": 4.3,
+            "price": 4800,
+            "amenities": [
+              "Fireplace",
+              "Laundry",
+              "Wheelchair Accessible",
+              "Mountain View",
+              "Parking"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Marina Shimla",
+            "rating": 4.4,
+            "price": 5500,
+            "amenities": [
+              "Parking",
+              "Restaurant",
+              "Mountain View",
+              "Fireplace",
+              "AC",
+              "Wheelchair Accessible",
+              "Spa"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Radisson Hotel Shimla",
+            "rating": 4.5,
+            "price": 7000,
+            "amenities": [
+              "WiFi",
+              "Spa",
+              "Wheelchair Accessible",
+              "Laundry"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Snow Valley Resorts",
+            "rating": 4.2,
+            "price": 4200,
+            "amenities": [
+              "Fireplace",
+              "Parking",
+              "Gym",
+              "Mountain View"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Silverine",
+            "rating": 4.3,
+            "price": 4500,
+            "amenities": [
+              "Fireplace",
+              "Gym",
+              "WiFi",
+              "Parking",
+              "Spa",
+              "Pet Friendly",
+              "Laundry"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Cafe Simla Times",
+            "price": 1000
+          },
+          {
+            "name": "Wake and Bake Cafe",
+            "price": 900
+          },
+          {
+            "name": "Eighteen71 Cookhouse",
+            "price": 1200
+          },
+          {
+            "name": "Indian Coffee House",
+            "price": 600
+          },
+          {
+            "name": "Cafe Sol",
+            "price": 1100
+          },
+          {
+            "name": "Honey Hut",
+            "price": 700
+          },
+          {
+            "name": "Embassy Restaurant",
+            "price": 800
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Himalayan Car Rentals",
+            "price": 2500,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Zoomcar Shimla",
+            "price": 2400,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Revv Shimla",
+            "price": 2300,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Shimla Bike Rentals",
+            "price": 1200,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "TravelCarz Shimla",
+            "price": 2600,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Mall Road",
+            "type": "Street"
+          },
+          {
+            "name": "The Ridge",
+            "type": "Viewpoint"
+          },
+          {
+            "name": "Christ Church",
+            "type": "Heritage"
+          },
+          {
+            "name": "Scandal Point",
+            "type": "Landmark"
+          },
+          {
+            "name": "Gaiety Theatre",
+            "type": "Cultural"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Indira Gandhi Medical College",
+            "contact": "+91 177 265 1700"
+          },
+          {
+            "name": "Deen Dayal Upadhyay Hospital",
+            "contact": "+91 177 280 4251"
+          },
+          {
+            "name": "Snowdon Hospital",
+            "contact": "+91 177 265 5678"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Shimla Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Mall Road Police Post",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "HP Petrol Pump Mall Road",
+            "contact": "+91 177 265 1234"
+          },
+          {
+            "name": "IndianOil Shimla",
+            "contact": "+91 177 265 5678"
+          }
+        ],
+        "events": [
+          {"name":"Mall Road Fest","type":"Festival","date":"Daily","time":"5PM","location":"Mall Road","price":0},
+          {"name":"Live Band Show","type":"Music","date":"Weekends","time":"7PM","location":"Cafe","price":300},
+          {"name":"Night Walk Tour","type":"Tour","date":"Daily","time":"8PM","location":"Mall Area","price":200}
+        ]
+      },
+      "kufri": {
+        "hotels": [
+          {
+            "name": "Kufri Holiday Resort",
+            "rating": 4.3,
+            "price": 4800,
+            "amenities": [
+              "Mountain View",
+              "Restaurant",
+              "Gym",
+              "Wheelchair Accessible",
+              "Laundry",
+              "AC"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Sterling Kufri",
+            "rating": 4.5,
+            "price": 5500,
+            "amenities": [
+              "Restaurant",
+              "Fireplace",
+              "WiFi",
+              "Wheelchair Accessible",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Snow King Retreat",
+            "rating": 4.2,
+            "price": 4200,
+            "amenities": [
+              "WiFi",
+              "Laundry",
+              "Pet Friendly",
+              "Mountain View",
+              "Parking",
+              "Spa"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Kufri Pacific Resort",
+            "rating": 4.4,
+            "price": 5000,
+            "amenities": [
+              "Parking",
+              "AC",
+              "Pet Friendly",
+              "Spa"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hilltop Resort Kufri",
+            "rating": 4.3,
+            "price": 4500,
+            "amenities": [
+              "Gym",
+              "AC",
+              "Pet Friendly",
+              "Fireplace",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Adventure Resort Kufri",
+            "rating": 4.2,
+            "price": 4300,
+            "amenities": [
+              "Gym",
+              "Spa",
+              "Pet Friendly",
+              "Wheelchair Accessible"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Woodays Resort",
+            "rating": 4.4,
+            "price": 4700,
+            "amenities": [
+              "Restaurant",
+              "Fireplace",
+              "Room Service",
+              "Spa",
+              "Laundry",
+              "Wheelchair Accessible"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Kufri Fun World Cafe",
+            "price": 800
+          },
+          {
+            "name": "Himalayan Cafe Kufri",
+            "price": 700
+          },
+          {
+            "name": "Snow View Restaurant",
+            "price": 900
+          },
+          {
+            "name": "Mountain Feast",
+            "price": 1000
+          },
+          {
+            "name": "Valley View Dhaba",
+            "price": 850
+          },
+          {
+            "name": "Cafe Lalit Kufri",
+            "price": 950
+          },
+          {
+            "name": "Woodland Eatery",
+            "price": 800
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Kufri Car Rentals",
+            "price": 2500,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Snow Ride Rentals",
+            "price": 1500,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Hill Drive Kufri",
+            "price": 2000,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Adventure Wheels Kufri",
+            "price": 1800,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Bike Rentals Kufri",
+            "price": 1200,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Kufri Fun World",
+            "type": "Adventure"
+          },
+          {
+            "name": "Mahasu Peak",
+            "type": "Viewpoint"
+          },
+          {
+            "name": "Himalayan Nature Park",
+            "type": "Nature"
+          },
+          {
+            "name": "Green Valley",
+            "type": "Scenic"
+          },
+          {
+            "name": "Fagu Valley",
+            "type": "Scenic"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Civil Hospital Kufri",
+            "contact": "+91 177 264 2222"
+          },
+          {
+            "name": "IGMC Shimla",
+            "contact": "+91 177 265 1700"
+          },
+          {
+            "name": "Primary Health Centre Kufri",
+            "contact": "+91 177 264 1111"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Kufri Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Fagu Police Post",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Kufri",
+            "contact": "+91 177 264 4444"
+          },
+          {
+            "name": "HP Petrol Pump Kufri",
+            "contact": "+91 177 264 3333"
+          }
+        ],
+        "events": [
+          {"name":"Ski Adventure","type":"Adventure","date":"Daily","time":"9AM","location":"Kufri Hills","price":800},
+          {"name":"Horse Riding","type":"Activity","date":"Daily","time":"10AM","location":"Kufri Grounds","price":300},
+          {"name":"Snow Festival","type":"Festival","date":"Seasonal","time":"All Day","location":"Kufri","price":500}
+        ]
+      },
+      "sanjauli": {
+        "hotels": [
+          {
+            "name": "Hotel Pine View Shimla",
+            "rating": 4.2,
+            "price": 3500,
+            "amenities": [
+              "Spa",
+              "Laundry",
+              "Restaurant",
+              "Mountain View",
+              "Room Service"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Hill Crest",
+            "rating": 4.3,
+            "price": 3600,
+            "amenities": [
+              "WiFi",
+              "Mountain View",
+              "Pet Friendly",
+              "AC"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Shimla Heritage",
+            "rating": 4.1,
+            "price": 3400,
+            "amenities": [
+              "Wheelchair Accessible",
+              "Fireplace",
+              "Laundry",
+              "Restaurant"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Amar Palace",
+            "rating": 4.2,
+            "price": 3700,
+            "amenities": [
+              "Room Service",
+              "AC",
+              "Fireplace",
+              "Laundry",
+              "Restaurant"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Victory Shimla",
+            "rating": 4.0,
+            "price": 3200,
+            "amenities": [
+              "Mountain View",
+              "Wheelchair Accessible",
+              "Restaurant",
+              "Spa",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Asia The Dawn",
+            "rating": 4.3,
+            "price": 4500,
+            "amenities": [
+              "Spa",
+              "AC",
+              "Parking",
+              "Restaurant",
+              "Laundry",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Landmark Shimla",
+            "rating": 4.1,
+            "price": 3300,
+            "amenities": [
+              "Restaurant",
+              "Laundry",
+              "Pet Friendly",
+              "Fireplace",
+              "Room Service"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Sanjauli Cafe",
+            "price": 700
+          },
+          {
+            "name": "Hilltop Restaurant",
+            "price": 800
+          },
+          {
+            "name": "Sanjauli Dhaba",
+            "price": 600
+          },
+          {
+            "name": "Taste of Hills",
+            "price": 900
+          },
+          {
+            "name": "Cafe Delight Shimla",
+            "price": 750
+          },
+          {
+            "name": "Mountain Spice",
+            "price": 850
+          },
+          {
+            "name": "Food Corner Sanjauli",
+            "price": 650
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Sanjauli Car Rentals",
+            "price": 2200,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Shimla Bike Rentals",
+            "price": 1200,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Revv Sanjauli",
+            "price": 2300,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Zoomcar Sanjauli",
+            "price": 2400,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Hill Riders Rentals",
+            "price": 2000,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Sanjauli Market",
+            "type": "Market"
+          },
+          {
+            "name": "Hill View Point",
+            "type": "Viewpoint"
+          },
+          {
+            "name": "Jakhoo Hill",
+            "type": "Nature"
+          },
+          {
+            "name": "Temple Hill Sanjauli",
+            "type": "Temple"
+          },
+          {
+            "name": "Forest Trail Shimla",
+            "type": "Nature"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Sanjauli Civil Hospital",
+            "contact": "+91 177 262 1111"
+          },
+          {
+            "name": "IGMC Shimla",
+            "contact": "+91 177 265 1700"
+          },
+          {
+            "name": "Community Health Centre",
+            "contact": "+91 177 262 2222"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Sanjauli Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Shimla Police",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Sanjauli",
+            "contact": "+91 177 262 3333"
+          },
+          {
+            "name": "HP Petrol Pump Sanjauli",
+            "contact": "+91 177 262 4444"
+          }
+        ],
+        "events": [
+          {"name":"Local Market Fair","type":"Market","date":"Weekly","time":"10AM","location":"Sanjauli Market","price":0},
+          {"name":"Food Festival","type":"Food","date":"Weekends","time":"1PM","location":"Street","price":200},
+          {"name":"Photography Walk","type":"Tour","date":"Sunday","time":"6AM","location":"Valley View","price":150}
+        ]
+      },
+      "chotta-shimla": {
+        "hotels": [
+          {
+            "name": "Hotel Fairmount Shimla",
+            "rating": 4.3,
+            "price": 4200,
+            "amenities": [
+              "Spa",
+              "Laundry",
+              "Restaurant",
+              "Wheelchair Accessible",
+              "Mountain View"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Shingar Shimla",
+            "rating": 4.1,
+            "price": 3800,
+            "amenities": [
+              "WiFi",
+              "AC",
+              "Gym",
+              "Restaurant",
+              "Laundry",
+              "Mountain View"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel CK International",
+            "rating": 4.2,
+            "price": 4000,
+            "amenities": [
+              "Parking",
+              "Spa",
+              "Restaurant",
+              "Laundry",
+              "Mountain View",
+              "Pet Friendly"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Victory Shimla",
+            "rating": 4.0,
+            "price": 3500,
+            "amenities": [
+              "Wheelchair Accessible",
+              "WiFi",
+              "AC",
+              "Pet Friendly",
+              "Parking",
+              "Restaurant",
+              "Spa"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Asia The Dawn",
+            "rating": 4.3,
+            "price": 4500,
+            "amenities": [
+              "Pet Friendly",
+              "Wheelchair Accessible",
+              "Parking",
+              "Gym",
+              "Laundry",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Himland East",
+            "rating": 4.1,
+            "price": 3700,
+            "amenities": [
+              "Room Service",
+              "WiFi",
+              "Laundry",
+              "Fireplace",
+              "Wheelchair Accessible",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Blue Diamond",
+            "rating": 4.0,
+            "price": 3200,
+            "amenities": [
+              "Room Service",
+              "Wheelchair Accessible",
+              "Gym",
+              "Parking"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Cafe Himland",
+            "price": 800
+          },
+          {
+            "name": "Spice Garden Restaurant",
+            "price": 900
+          },
+          {
+            "name": "Hillside Cafe",
+            "price": 850
+          },
+          {
+            "name": "Chotta Shimla Dhaba",
+            "price": 600
+          },
+          {
+            "name": "The Food Villa",
+            "price": 950
+          },
+          {
+            "name": "Green Leaf Cafe",
+            "price": 700
+          },
+          {
+            "name": "Taste Buds Shimla",
+            "price": 800
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Chotta Shimla Car Rentals",
+            "price": 2200,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Bike Rentals Shimla",
+            "price": 1200,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Zoomcar Shimla",
+            "price": 2400,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Revv Shimla",
+            "price": 2300,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Hill Drive Rentals",
+            "price": 2000,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Chotta Shimla Park",
+            "type": "Park"
+          },
+          {
+            "name": "View Point Shimla",
+            "type": "Viewpoint"
+          },
+          {
+            "name": "Temple Road Shimla",
+            "type": "Temple"
+          },
+          {
+            "name": "Hill Garden",
+            "type": "Nature"
+          },
+          {
+            "name": "Local Street Shimla",
+            "type": "Street"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Chotta Shimla Hospital",
+            "contact": "+91 177 263 1111"
+          },
+          {
+            "name": "IGMC Shimla",
+            "contact": "+91 177 265 1700"
+          },
+          {
+            "name": "Civil Health Centre",
+            "contact": "+91 177 263 2222"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Chotta Shimla Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Shimla Police",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Chotta Shimla",
+            "contact": "+91 177 263 3333"
+          },
+          {
+            "name": "HP Petrol Pump Chotta Shimla",
+            "contact": "+91 177 263 4444"
+          }
+        ],
+        "events": [
+          {"name":"Forest Walk","type":"Nature","date":"Daily","time":"7AM","location":"Pine Forest","price":100},
+          {"name":"Yoga Retreat","type":"Wellness","date":"Weekends","time":"6AM","location":"Resort","price":400},
+          {"name":"Art Workshop","type":"Art","date":"Saturday","time":"3PM","location":"Local Studio","price":250}
+        ]
+      },
+      "lakkar-bazaar": {
+        "hotels": [
+          {
+            "name": "Hotel Kapil Shimla",
+            "rating": 4.2,
+            "price": 3800,
+            "amenities": [
+              "Parking",
+              "Laundry",
+              "Gym",
+              "WiFi",
+              "Spa"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Shingar Shimla",
+            "rating": 4.1,
+            "price": 3500,
+            "amenities": [
+              "Gym",
+              "Spa",
+              "Fireplace",
+              "Restaurant",
+              "Parking",
+              "Laundry"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Himland East",
+            "rating": 4.1,
+            "price": 3700,
+            "amenities": [
+              "Gym",
+              "WiFi",
+              "Mountain View",
+              "Fireplace"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Victory Shimla",
+            "rating": 4.0,
+            "price": 3200,
+            "amenities": [
+              "Mountain View",
+              "Room Service",
+              "Restaurant",
+              "Fireplace",
+              "Wheelchair Accessible"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Pine View",
+            "rating": 4.2,
+            "price": 3600,
+            "amenities": [
+              "Spa",
+              "Fireplace",
+              "Gym",
+              "Room Service"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Silverine",
+            "rating": 4.3,
+            "price": 4500,
+            "amenities": [
+              "AC",
+              "Restaurant",
+              "Room Service",
+              "Wheelchair Accessible",
+              "Gym",
+              "Pet Friendly"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Asia The Dawn",
+            "rating": 4.3,
+            "price": 4300,
+            "amenities": [
+              "WiFi",
+              "AC",
+              "Restaurant",
+              "Parking",
+              "Pet Friendly",
+              "Laundry"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Lakkar Bazaar Cafe",
+            "price": 700
+          },
+          {
+            "name": "Wood Craft Cafe",
+            "price": 800
+          },
+          {
+            "name": "Hillside Eatery",
+            "price": 900
+          },
+          {
+            "name": "Taste of Himachal",
+            "price": 850
+          },
+          {
+            "name": "Street Food Corner",
+            "price": 500
+          },
+          {
+            "name": "Cafe Heritage Shimla",
+            "price": 950
+          },
+          {
+            "name": "Local Dhaba Lakkar Bazaar",
+            "price": 600
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Lakkar Bazaar Car Rentals",
+            "price": 2200,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Shimla Bike Rentals",
+            "price": 1200,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Zoomcar Shimla",
+            "price": 2400,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Revv Shimla",
+            "price": 2300,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Hill Riders Rentals",
+            "price": 2000,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Lakkar Bazaar Market",
+            "type": "Market"
+          },
+          {
+            "name": "Wood Craft Market",
+            "type": "Shopping"
+          },
+          {
+            "name": "Heritage Walk Shimla",
+            "type": "Cultural"
+          },
+          {
+            "name": "Temple Lane",
+            "type": "Temple"
+          },
+          {
+            "name": "Hill Street Shimla",
+            "type": "Street"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Lakkar Bazaar Health Centre",
+            "contact": "+91 177 264 1111"
+          },
+          {
+            "name": "IGMC Shimla",
+            "contact": "+91 177 265 1700"
+          },
+          {
+            "name": "Civil Clinic Shimla",
+            "contact": "+91 177 264 2222"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Lakkar Bazaar Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Shimla Police",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Lakkar Bazaar",
+            "contact": "+91 177 264 3333"
+          },
+          {
+            "name": "HP Petrol Pump Lakkar Bazaar",
+            "contact": "+91 177 264 4444"
+          }
+        ],
+        "events": [
+          {"name":"Woodcraft Expo","type":"Exhibition","date":"Daily","time":"10AM","location":"Bazaar","price":100},
+          {"name":"Street Performance","type":"Entertainment","date":"Evening","time":"6PM","location":"Market","price":0},
+          {"name":"Shopping Carnival","type":"Shopping","date":"Weekends","time":"5PM","location":"Bazaar","price":0}
+        ]
+      }
+    }
+  },
+  "varanasi": {
+    "areas": {
+      "dashashwamedh": {
+        "hotels": [
+          {
+            "name": "BrijRama Palace",
+            "rating": 4.8,
+            "price": 9000,
+            "amenities": [
+              "Pet Friendly",
+              "Yoga Studio",
+              "Room Service",
+              "Laundry"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Alka",
+            "rating": 4.3,
+            "price": 3500,
+            "amenities": [
+              "Pet Friendly",
+              "Wheelchair Accessible",
+              "AC",
+              "Yoga Studio",
+              "Rooftop View",
+              "Parking",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Palace on Ganges",
+            "rating": 4.6,
+            "price": 5500,
+            "amenities": [
+              "WiFi",
+              "Wheelchair Accessible",
+              "Spa",
+              "Rooftop View",
+              "Room Service",
+              "Pet Friendly",
+              "Laundry"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Ganges View Hotel",
+            "rating": 4.5,
+            "price": 5000,
+            "amenities": [
+              "Pet Friendly",
+              "Room Service",
+              "AC",
+              "Restaurant",
+              "Wheelchair Accessible",
+              "Spa"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Rivera Palace",
+            "rating": 4.3,
+            "price": 4200,
+            "amenities": [
+              "Room Service",
+              "Yoga Studio",
+              "Restaurant",
+              "Wheelchair Accessible",
+              "Parking",
+              "AC",
+              "Rooftop View"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Temple View",
+            "rating": 4.2,
+            "price": 3800,
+            "amenities": [
+              "Spa",
+              "Parking",
+              "Pet Friendly",
+              "Restaurant",
+              "Yoga Studio",
+              "Wheelchair Accessible",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Surya",
+            "rating": 4.4,
+            "price": 4500,
+            "amenities": [
+              "Restaurant",
+              "Rooftop View",
+              "Yoga Studio",
+              "Room Service",
+              "Ganga View",
+              "Spa"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Kashi Chat Bhandar",
+            "price": 400
+          },
+          {
+            "name": "Brown Bread Bakery",
+            "price": 800
+          },
+          {
+            "name": "Dolphin Restaurant",
+            "price": 900
+          },
+          {
+            "name": "Shree Cafe",
+            "price": 600
+          },
+          {
+            "name": "Aum Cafe",
+            "price": 650
+          },
+          {
+            "name": "Ganga View Cafe",
+            "price": 750
+          },
+          {
+            "name": "Baba Lassi",
+            "price": 300
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Varanasi Car Rentals",
+            "price": 2200,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Zoomcar Varanasi",
+            "price": 2400,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Revv Varanasi",
+            "price": 2300,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Bike Rentals Varanasi",
+            "price": 1200,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Travel India Rentals",
+            "price": 2500,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Dashashwamedh Ghat",
+            "type": "Religious"
+          },
+          {
+            "name": "Ganga Aarti",
+            "type": "Cultural"
+          },
+          {
+            "name": "Kashi Vishwanath Temple",
+            "type": "Temple"
+          },
+          {
+            "name": "Manikarnika Ghat",
+            "type": "Heritage"
+          },
+          {
+            "name": "Boat Ride Ganges",
+            "type": "Experience"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Heritage Hospital",
+            "contact": "+91 542 2509999"
+          },
+          {
+            "name": "Galaxy Hospital",
+            "contact": "+91 542 2307777"
+          },
+          {
+            "name": "Shiv Prasad Hospital",
+            "contact": "+91 542 2408888"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Dashashwamedh Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Kotwali Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Dashashwamedh",
+            "contact": "+91 542 2201111"
+          },
+          {
+            "name": "HP Petrol Pump Varanasi",
+            "contact": "+91 542 2202222"
+          }
+        ],
+        "events": [
+          {"name":"Ganga Aarti","type":"Religious","date":"Daily","time":"6PM","location":"Ghat","price":0},
+          {"name":"Boat Ride","type":"Tour","date":"Daily","time":"5AM","location":"Ganga River","price":300},
+          {"name":"Evening Cultural Show","type":"Cultural","date":"Daily","time":"7PM","location":"Ghat","price":200}
+        ]
+      },
+      "assi": {
+        "hotels": [
+          {
+            "name": "Hotel Ganges Grand",
+            "rating": 4.4,
+            "price": 4800,
+            "amenities": [
+              "Spa",
+              "Rooftop View",
+              "Wheelchair Accessible",
+              "Ganga View",
+              "Parking",
+              "Room Service",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Sita",
+            "rating": 4.2,
+            "price": 3500,
+            "amenities": [
+              "Wheelchair Accessible",
+              "Spa",
+              "Pet Friendly",
+              "Room Service",
+              "AC",
+              "Yoga Studio"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Temple on Ganges",
+            "rating": 4.3,
+            "price": 4200,
+            "amenities": [
+              "Spa",
+              "Restaurant",
+              "Rooftop View",
+              "Pet Friendly",
+              "Parking"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Shivakashi Guest House",
+            "rating": 4.1,
+            "price": 3000,
+            "amenities": [
+              "WiFi",
+              "Rooftop View",
+              "Ganga View",
+              "AC"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Rivera Palace",
+            "rating": 4.3,
+            "price": 4200,
+            "amenities": [
+              "Yoga Studio",
+              "Spa",
+              "Pet Friendly",
+              "Rooftop View",
+              "Laundry",
+              "Wheelchair Accessible",
+              "Ganga View"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Vibhav Harsh",
+            "rating": 4.0,
+            "price": 3200,
+            "amenities": [
+              "Parking",
+              "Spa",
+              "WiFi",
+              "AC",
+              "Yoga Studio"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Tridev",
+            "rating": 4.2,
+            "price": 3800,
+            "amenities": [
+              "Parking",
+              "Wheelchair Accessible",
+              "Ganga View",
+              "WiFi",
+              "Rooftop View"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Pizzeria Vaatika Cafe",
+            "price": 800
+          },
+          {
+            "name": "Aum Cafe",
+            "price": 650
+          },
+          {
+            "name": "Open Hand Cafe",
+            "price": 900
+          },
+          {
+            "name": "Cafe Assi",
+            "price": 700
+          },
+          {
+            "name": "Vaatika Cafe",
+            "price": 850
+          },
+          {
+            "name": "Sparrow Cafe",
+            "price": 750
+          },
+          {
+            "name": "Green Lassi Shop",
+            "price": 300
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Assi Car Rentals",
+            "price": 2200,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Bike Rentals Assi",
+            "price": 1200,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Zoomcar Assi",
+            "price": 2400,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Revv Assi",
+            "price": 2300,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Travel Wheels Varanasi",
+            "price": 2500,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Assi Ghat",
+            "type": "Religious"
+          },
+          {
+            "name": "Morning Ganga Aarti",
+            "type": "Cultural"
+          },
+          {
+            "name": "Tulsi Ghat",
+            "type": "Heritage"
+          },
+          {
+            "name": "Nagwa Ghat",
+            "type": "Scenic"
+          },
+          {
+            "name": "Riverfront Walk",
+            "type": "Experience"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Heritage Hospital",
+            "contact": "+91 542 2509999"
+          },
+          {
+            "name": "Galaxy Hospital",
+            "contact": "+91 542 2307777"
+          },
+          {
+            "name": "Orthomax Hospital",
+            "contact": "+91 542 2320000"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Assi Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Lanka Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Assi",
+            "contact": "+91 542 2203333"
+          },
+          {
+            "name": "HP Petrol Pump Assi",
+            "contact": "+91 542 2204444"
+          }
+        ],
+        "events": [
+          {"name":"Morning Yoga","type":"Wellness","date":"Daily","time":"5AM","location":"Assi Ghat","price":100},
+          {"name":"Cafe Music Nights","type":"Music","date":"Weekends","time":"8PM","location":"Cafes","price":300},
+          {"name":"Book Reading Event","type":"Literature","date":"Sunday","time":"4PM","location":"Cafe","price":150}
+        ]
+      },
+      "godowlia": {
+        "hotels": [
+          {
+            "name": "Hotel Alka",
+            "rating": 4.3,
+            "price": 3500,
+            "amenities": [
+              "Ganga View",
+              "Parking",
+              "Laundry",
+              "Wheelchair Accessible"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Temple View",
+            "rating": 4.2,
+            "price": 3800,
+            "amenities": [
+              "Ganga View",
+              "Pet Friendly",
+              "Wheelchair Accessible",
+              "Yoga Studio",
+              "Laundry",
+              "AC"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Surya",
+            "rating": 4.4,
+            "price": 4500,
+            "amenities": [
+              "Ganga View",
+              "Restaurant",
+              "Rooftop View",
+              "Spa",
+              "Laundry",
+              "Room Service",
+              "AC"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Varanasi Inn",
+            "rating": 4.3,
+            "price": 4200,
+            "amenities": [
+              "Ganga View",
+              "AC",
+              "Restaurant",
+              "Rooftop View",
+              "Pet Friendly",
+              "Parking"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Costa River",
+            "rating": 4.2,
+            "price": 4000,
+            "amenities": [
+              "Wheelchair Accessible",
+              "AC",
+              "Parking",
+              "Pet Friendly",
+              "Rooftop View",
+              "Ganga View"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Banaras Haveli",
+            "rating": 4.5,
+            "price": 5000,
+            "amenities": [
+              "Laundry",
+              "Rooftop View",
+              "AC",
+              "Yoga Studio",
+              "Wheelchair Accessible"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Ganges View",
+            "rating": 4.5,
+            "price": 4800,
+            "amenities": [
+              "Wheelchair Accessible",
+              "Ganga View",
+              "Yoga Studio",
+              "WiFi",
+              "Rooftop View",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Kashi Chat Bhandar",
+            "price": 400
+          },
+          {
+            "name": "Blue Lassi Shop",
+            "price": 300
+          },
+          {
+            "name": "Deena Chaat Bhandar",
+            "price": 350
+          },
+          {
+            "name": "Shree Cafe",
+            "price": 600
+          },
+          {
+            "name": "Baba Lassi",
+            "price": 300
+          },
+          {
+            "name": "Varanasi Cafe",
+            "price": 700
+          },
+          {
+            "name": "Brown Bread Bakery",
+            "price": 800
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Godowlia Car Rentals",
+            "price": 2200,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Bike Rentals Godowlia",
+            "price": 1200,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Zoomcar Godowlia",
+            "price": 2400,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Revv Godowlia",
+            "price": 2300,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Travel India Rentals",
+            "price": 2500,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Godowlia Chowk",
+            "type": "Market"
+          },
+          {
+            "name": "Vishwanath Gali",
+            "type": "Shopping"
+          },
+          {
+            "name": "Kashi Vishwanath Temple",
+            "type": "Temple"
+          },
+          {
+            "name": "Dashashwamedh Ghat",
+            "type": "Religious"
+          },
+          {
+            "name": "Banaras Streets",
+            "type": "Cultural"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Heritage Hospital",
+            "contact": "+91 542 2509999"
+          },
+          {
+            "name": "Galaxy Hospital",
+            "contact": "+91 542 2307777"
+          },
+          {
+            "name": "Apex Hospital",
+            "contact": "+91 542 2310000"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Godowlia Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Kotwali Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Godowlia",
+            "contact": "+91 542 2205555"
+          },
+          {
+            "name": "HP Petrol Pump Godowlia",
+            "contact": "+91 542 2206666"
+          }
+        ],
+        "events": [
+          {"name":"Street Shopping Fest","type":"Shopping","date":"Daily","time":"All Day","location":"Market","price":0},
+          {"name":"Food Walk","type":"Food","date":"Daily","time":"6PM","location":"Streets","price":250},
+          {"name":"Night Bazaar","type":"Market","date":"Daily","time":"8PM","location":"Market","price":0}
+        ]
+      },
+      "cantt": {
+        "hotels": [
+          {
+            "name": "Ramada Plaza Varanasi",
+            "rating": 4.6,
+            "price": 7000,
+            "amenities": [
+              "Yoga Studio",
+              "Pet Friendly",
+              "WiFi",
+              "Laundry",
+              "Ganga View",
+              "Spa",
+              "Parking"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Clarks Varanasi",
+            "rating": 4.5,
+            "price": 6500,
+            "amenities": [
+              "Yoga Studio",
+              "Laundry",
+              "Wheelchair Accessible",
+              "Pet Friendly",
+              "Rooftop View",
+              "Ganga View"
+            ],
+            "wifi": false,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "The Gateway Hotel Ganges",
+            "rating": 4.5,
+            "price": 6800,
+            "amenities": [
+              "Restaurant",
+              "Yoga Studio",
+              "Ganga View",
+              "WiFi",
+              "Spa"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Surya Kaiser Palace",
+            "rating": 4.4,
+            "price": 5500,
+            "amenities": [
+              "Spa",
+              "Laundry",
+              "Yoga Studio",
+              "Parking",
+              "Ganga View",
+              "AC"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Hindusthan International",
+            "rating": 4.3,
+            "price": 5200,
+            "amenities": [
+              "Yoga Studio",
+              "Pet Friendly",
+              "Spa",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Madin",
+            "rating": 4.4,
+            "price": 6000,
+            "amenities": [
+              "Spa",
+              "Yoga Studio",
+              "Parking",
+              "Ganga View"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Rivatas",
+            "rating": 4.5,
+            "price": 6500,
+            "amenities": [
+              "WiFi",
+              "Restaurant",
+              "Yoga Studio",
+              "Room Service",
+              "Rooftop View"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Ming Garden",
+            "price": 1200
+          },
+          {
+            "name": "Tadka Restaurant",
+            "price": 900
+          },
+          {
+            "name": "Varuna Restaurant",
+            "price": 1100
+          },
+          {
+            "name": "The Palate",
+            "price": 1300
+          },
+          {
+            "name": "Cafe Coffee Day Cantt",
+            "price": 700
+          },
+          {
+            "name": "Burger King Varanasi",
+            "price": 600
+          },
+          {
+            "name": "KFC Varanasi",
+            "price": 800
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Cantt Car Rentals",
+            "price": 2500,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Zoomcar Cantt",
+            "price": 2400,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Revv Cantt",
+            "price": 2300,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Bike Rentals Cantt",
+            "price": 1200,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Travel Wheels Varanasi",
+            "price": 2600,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Varanasi Cantt Area",
+            "type": "City"
+          },
+          {
+            "name": "Railway Station Area",
+            "type": "Landmark"
+          },
+          {
+            "name": "Varuna River",
+            "type": "Nature"
+          },
+          {
+            "name": "Shopping Complex Cantt",
+            "type": "Market"
+          },
+          {
+            "name": "City Walk",
+            "type": "Experience"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Heritage Hospital",
+            "contact": "+91 542 2509999"
+          },
+          {
+            "name": "Galaxy Hospital",
+            "contact": "+91 542 2307777"
+          },
+          {
+            "name": "Orthomax Hospital",
+            "contact": "+91 542 2320000"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Cantt Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "Varanasi Police",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Cantt",
+            "contact": "+91 542 2207777"
+          },
+          {
+            "name": "HP Petrol Pump Cantt",
+            "contact": "+91 542 2208888"
+          }
+        ],
+        "events": [
+          {"name":"Hotel Live Music","type":"Music","date":"Weekends","time":"8PM","location":"Hotels","price":500},
+          {"name":"Business Meetup","type":"Networking","date":"Friday","time":"6PM","location":"Conference Hall","price":300},
+          {"name":"Food Festival","type":"Food","date":"Weekends","time":"1PM","location":"Hotel","price":400}
+        ]
+      },
+      "lanka": {
+        "hotels": [
+          {
+            "name": "Hotel Tridev",
+            "rating": 4.2,
+            "price": 3800,
+            "amenities": [
+              "Room Service",
+              "Laundry",
+              "Yoga Studio",
+              "Restaurant",
+              "Pet Friendly",
+              "Parking",
+              "WiFi"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Vibhav Harsh",
+            "rating": 4.0,
+            "price": 3200,
+            "amenities": [
+              "WiFi",
+              "Wheelchair Accessible",
+              "Laundry",
+              "Room Service",
+              "Rooftop View",
+              "Spa",
+              "Pet Friendly"
+            ],
+            "wifi": true,
+            "wheelchair": true,
+            "pet_friendly": true,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Rivera Palace",
+            "rating": 4.3,
+            "price": 4200,
+            "amenities": [
+              "WiFi",
+              "Rooftop View",
+              "Spa",
+              "Laundry"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": true,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Ganges Grand",
+            "rating": 4.4,
+            "price": 4800,
+            "amenities": [
+              "Rooftop View",
+              "Parking",
+              "Ganga View",
+              "AC",
+              "Laundry"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": false
+          },
+          {
+            "name": "Hotel Sita",
+            "rating": 4.2,
+            "price": 3500,
+            "amenities": [
+              "Laundry",
+              "Restaurant",
+              "Room Service",
+              "Parking",
+              "AC",
+              "Yoga Studio",
+              "Ganga View"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": false,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Surya",
+            "rating": 4.4,
+            "price": 4500,
+            "amenities": [
+              "AC",
+              "Pet Friendly",
+              "WiFi",
+              "Restaurant",
+              "Yoga Studio",
+              "Rooftop View"
+            ],
+            "wifi": true,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          },
+          {
+            "name": "Hotel Alka",
+            "rating": 4.3,
+            "price": 3500,
+            "amenities": [
+              "AC",
+              "Pet Friendly",
+              "Rooftop View",
+              "Laundry",
+              "Restaurant"
+            ],
+            "wifi": false,
+            "wheelchair": false,
+            "pet_friendly": true,
+            "pool": false,
+            "restaurant": true
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Pizzeria Vaatika Cafe",
+            "price": 800
+          },
+          {
+            "name": "Aum Cafe",
+            "price": 650
+          },
+          {
+            "name": "Open Hand Cafe",
+            "price": 900
+          },
+          {
+            "name": "Cafe Lanka",
+            "price": 700
+          },
+          {
+            "name": "Green Lassi Shop",
+            "price": 300
+          },
+          {
+            "name": "Sparrow Cafe",
+            "price": 750
+          },
+          {
+            "name": "Vaatika Cafe",
+            "price": 850
+          }
+        ],
+        "rentals": [
+          {
+            "name": "Lanka Car Rentals",
+            "price": 2200,
+            "type": "bike",
+            "icon": "\ud83d\udeb2",
+            "label": "Bicycle",
+            "specs": [
+              "Eco-friendly",
+              "Helmet included",
+              "City use"
+            ]
+          },
+          {
+            "name": "Bike Rentals Lanka",
+            "price": 1200,
+            "type": "scooter",
+            "icon": "\ud83d\udef5",
+            "label": "Scooter",
+            "specs": [
+              "Automatic",
+              "Fuel efficient",
+              "City & suburbs"
+            ]
+          },
+          {
+            "name": "Zoomcar Lanka",
+            "price": 2400,
+            "type": "bike",
+            "icon": "\ud83c\udfcd\ufe0f",
+            "label": "Royal Enfield",
+            "specs": [
+              "350cc",
+              "Manual",
+              "Long distance"
+            ]
+          },
+          {
+            "name": "Revv Lanka",
+            "price": 2300,
+            "type": "car",
+            "icon": "\ud83d\ude97",
+            "label": "Hatchback",
+            "specs": [
+              "AC",
+              "4 Seater",
+              "City friendly"
+            ]
+          },
+          {
+            "name": "Travel Wheels Varanasi",
+            "price": 2500,
+            "type": "car",
+            "icon": "\ud83d\ude98",
+            "label": "Sedan",
+            "specs": [
+              "AC",
+              "5 Seater",
+              "Comfortable"
+            ]
+          }
+        ],
+        "attractions": [
+          {
+            "name": "Banaras Hindu University",
+            "type": "Educational"
+          },
+          {
+            "name": "New Vishwanath Temple",
+            "type": "Temple"
+          },
+          {
+            "name": "BHU Campus",
+            "type": "Nature"
+          },
+          {
+            "name": "Assi Ghat",
+            "type": "Religious"
+          },
+          {
+            "name": "Lanka Market",
+            "type": "Market"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "BHU Hospital",
+            "contact": "+91 542 2368888"
+          },
+          {
+            "name": "Heritage Hospital",
+            "contact": "+91 542 2509999"
+          },
+          {
+            "name": "Galaxy Hospital",
+            "contact": "+91 542 2307777"
+          }
+        ],
+        "policeStations": [
+          {
+            "name": "Lanka Police Station",
+            "contact": "100"
+          },
+          {
+            "name": "BHU Police Station",
+            "contact": "100"
+          }
+        ],
+        "petrolPumps": [
+          {
+            "name": "IndianOil Lanka",
+            "contact": "+91 542 2209999"
+          },
+          {
+            "name": "HP Petrol Pump Lanka",
+            "contact": "+91 542 2210000"
+          }
+        ],
+        "events": [
+          {"name":"Student Fest","type":"Festival","date":"Monthly","time":"All Day","location":"BHU","price":100},
+          {"name":"Street Food Night","type":"Food","date":"Daily","time":"7PM","location":"Lanka","price":150},
+          {"name":"Music Jam","type":"Music","date":"Weekends","time":"8PM","location":"Cafe","price":200}
+        ]
+      }
+    }
+  }
+  
+}
