@@ -71,39 +71,6 @@ Development Tools:
 
 ---
 
-## Project Structure
-
-
-traveloop
-│
-├── backend
-│ ├── routes
-│ ├── config
-│ ├── server.js
-│ └── package.json
-│
-├── index.html
-├── explore.html
-├── planner.html
-├── travel-buddy.html
-├── suggested-partners.html
-├── billing.html
-├── login.html
-├── register.html
-│
-├── style.css
-├── script.js
-│
-├── data.json
-├── travellerdata.json
-│
-├── screenshots
-│
-└── README.md
-
-
----
-
 ## Installation and Setup
 
 ### 1. Clone repository
